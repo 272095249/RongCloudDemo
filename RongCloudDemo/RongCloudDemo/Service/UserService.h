@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSArray *)contacts;
 
+- (NSArray *)groups;
+
 - (BOOL)isLogin;
 
 @end

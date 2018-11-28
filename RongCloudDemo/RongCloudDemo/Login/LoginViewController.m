@@ -18,7 +18,7 @@
 
 @end
 
-static NSString *loginCellID = @"ContactCellID";
+static NSString *loginCellID = @"LoginCellID";
 @implementation LoginViewController
 
 - (void)viewDidLoad {

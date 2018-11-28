@@ -32,6 +32,14 @@
     return nil;
 }
 
+- (NSArray *)groups {
+    RCGroup *group1 = [[RCGroup alloc] initWithGroupId:@"123456" groupName:@"测试群组1" portraitUri:@"https://upload-images.jianshu.io/upload_images/1253108-86c3301deb4da960.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"];
+    RCGroup *group2 = [[RCGroup alloc] initWithGroupId:@"123457" groupName:@"测试群组2" portraitUri:@"https://upload-images.jianshu.io/upload_images/1253108-86c3301deb4da960.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"];
+    RCGroup *group3 = [[RCGroup alloc] initWithGroupId:@"123458" groupName:@"测试群组3" portraitUri:@"https://upload-images.jianshu.io/upload_images/1253108-86c3301deb4da960.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"];
+    return @[group1, group2, group3];
+}
+
+
 - (NSArray *)contacts {
     
     RCUserInfo *test1 = [[RCUserInfo alloc] initWithUserId:@"15510269373" name:@"测试1" portrait:@"https://upload-images.jianshu.io/upload_images/1253108-86c3301deb4da960.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"];
