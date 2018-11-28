@@ -22,9 +22,6 @@
                                         @(ConversationType_CHATROOM) // 聊天室
                                         ]];
     
-    [self setCollectionConversationType:@[@(ConversationType_DISCUSSION),
-                                          @(ConversationType_GROUP)
-                                          ]];
 }
 
 
@@ -42,7 +39,7 @@
             }];
             break;
         }
-        case ConversationType_DISCUSSION: {
+        case ConversationType_GROUP: {
             [[UserService share] getGroupInfoWithGroupId:model.targetId completion:^(RCGroup * _Nonnull groupInfo) {
                 chatVC.title = groupInfo.groupName;
             }];

@@ -73,7 +73,7 @@ static NSString *groupCellID = @"GroupCellID";
     // 点击自己时需要处理
     
     SHConversationViewController *chatVC = [[SHConversationViewController alloc] init];
-    chatVC.conversationType = ConversationType_PRIVATE;
+    chatVC.conversationType = ConversationType_GROUP;
     chatVC.targetId = group.groupId;
     chatVC.title = group.groupName;
     chatVC.hidesBottomBarWhenPushed = YES;

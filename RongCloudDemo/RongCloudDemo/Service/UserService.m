@@ -14,6 +14,7 @@
 - (instancetype)init{
     if (self = [super init]) {
         [RCIM sharedRCIM].userInfoDataSource = self;
+        [RCIM sharedRCIM].groupInfoDataSource = self;
     }
     return self;
 }
@@ -32,12 +33,6 @@
     return [[NSUserDefaults standardUserDefaults] objectForKey:@"isLogin"];
 }
 
-- (RCUserInfo *)currentUser {
-    
-    
-    return nil;
-}
-
 - (void)getUserInfoWithUserId:(NSString *)userId completion:(void (^)(RCUserInfo * _Nonnull))completion {
     for (RCUserInfo *userInfo in [self contacts]) {
         if ([userInfo.userId isEqualToString:userId]) {
@@ -54,14 +49,12 @@
     }
 }
 
-
 - (NSArray *)groups {
     RCGroup *group1 = [[RCGroup alloc] initWithGroupId:@"123456" groupName:@"测试群组1" portraitUri:@"https://upload-images.jianshu.io/upload_images/1253108-86c3301deb4da960.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"];
     RCGroup *group2 = [[RCGroup alloc] initWithGroupId:@"123457" groupName:@"测试群组2" portraitUri:@"https://upload-images.jianshu.io/upload_images/1253108-86c3301deb4da960.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"];
     RCGroup *group3 = [[RCGroup alloc] initWithGroupId:@"123458" groupName:@"测试群组3" portraitUri:@"https://upload-images.jianshu.io/upload_images/1253108-86c3301deb4da960.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"];
     return @[group1, group2, group3];
 }
-
 
 - (NSArray *)contacts {
     
