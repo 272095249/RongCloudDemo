@@ -11,7 +11,8 @@
 #import "SHConversationListViewController.h"
 #import "SHDiscussionListViewController.h"
 #import "SHGroupListViewController.h"
-
+#import "UserService.h"
+#import "Login/LoginViewController.h"
 
 @interface RootTabBarController ()
 
@@ -39,6 +40,10 @@
     
     
     self.viewControllers = array;
+    
+//    if (![[UserService share] isLogin]) {
+//        [self presentViewController:[LoginViewController new] animated:true completion:nil];
+//    }
     
 }
 

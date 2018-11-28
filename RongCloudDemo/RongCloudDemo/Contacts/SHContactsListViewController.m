@@ -19,13 +19,12 @@
 
 @end
 
-static NSString *cellID = @"ContactCellID";
+static NSString *contactCellID = @"ContactCellID";
 
 @implementation SHContactsListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     self.tableView.delegate = self;
@@ -35,7 +34,7 @@ static NSString *cellID = @"ContactCellID";
     self.tableView.userInteractionEnabled = YES;
     [self.view addSubview:self.tableView];
     
-    [self.tableView registerClass:[ContactCell class] forCellReuseIdentifier:cellID];
+    [self.tableView registerClass:[ContactCell class] forCellReuseIdentifier:contactCellID];
     
 }
 
@@ -51,9 +50,9 @@ static NSString *cellID = @"ContactCellID";
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     
-    ContactCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
+    ContactCell *cell = [tableView dequeueReusableCellWithIdentifier:contactCellID forIndexPath:indexPath];
     if (cell == nil) {
-        cell = [[ContactCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
+        cell = [[ContactCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:contactCellID];
     }
     
     RCUserInfo * userInfo = [[UserService share] contacts][indexPath.row];
@@ -80,19 +79,6 @@ static NSString *cellID = @"ContactCellID";
     chatVC.title = userInfo.name;
     chatVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:chatVC animated:YES];
-    
-    
-    
-    NSLog(@"%ld -- %@ -- %@ -- %@", (long)indexPath.row, userInfo.name, userInfo.userId, userInfo.portraitUri);
-}
-
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return  0.001;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return  0.001;
 }
 
 @end
