@@ -39,7 +39,13 @@
     
     // 将连接服务器更改到login
     // 连接服务器
-    [[RCIM sharedRCIM] connectWithToken:@"HwKxNPHM7SmCIvp53jSQV/4OQSvLWK4YEBdyxsEdTU6dpkGJUv1T5UgJnupbSZzZ21utmyF+JiAkhUFgsdZ4H2VT/UbiGZiy" success:^(NSString *userId) {
+    // HarrySun -- HwKxNPHM7SmCIvp53jSQV/4OQSvLWK4YEBdyxsEdTU6dpkGJUv1T5UgJnupbSZzZ21utmyF+JiAkhUFgsdZ4H2VT/UbiGZiy
+    // 17ivLw3EAVyeLFAnYd/IQ+vsMfT7dGGVbjDYCJIhAZ5bJDQZdxBxbSGI4wW+sYcNGKt/zjaO9+bcljxYoWT7ckFykiY7cDrl
+    [[RCIM sharedRCIM] connectWithToken:@"17ivLw3EAVyeLFAnYd/IQ+vsMfT7dGGVbjDYCJIhAZ5bJDQZdxBxbSGI4wW+sYcNGKt/zjaO9+bcljxYoWT7ckFykiY7cDrl" success:^(NSString *userId) {
+        [[UserService share] getUserInfoWithUserId:userId completion:^(RCUserInfo * _Nonnull userInfo) {
+            // 当前用户的信息
+            [RCIM sharedRCIM].currentUserInfo = userInfo;
+        }];
         NSLog(@"登陆成功。当前登录的用户ID：%@", userId);
     } error:^(RCConnectErrorCode status) {
         NSLog(@"登陆的错误码为:%ld", (long)status);
@@ -50,8 +56,9 @@
         NSLog(@"token错误");
     }];
     
-//    [RCIM sharedRCIM].userInfoDataSource = [UserService share];
-//    [RCIM sharedRCIM].groupInfoDataSource = [UserService share];
+    // 设置后显示好友信息
+    [RCIM sharedRCIM].userInfoDataSource = [UserService share];
+    [RCIM sharedRCIM].groupInfoDataSource = [UserService share];
 }
 
 

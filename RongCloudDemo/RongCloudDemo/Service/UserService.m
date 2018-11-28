@@ -11,6 +11,13 @@
 
 @implementation UserService
 
+- (instancetype)init{
+    if (self = [super init]) {
+        [RCIM sharedRCIM].userInfoDataSource = self;
+    }
+    return self;
+}
+
 + (UserService *)share {
     
     static UserService *userService = nil;
@@ -18,7 +25,6 @@
     dispatch_once(&onceToken, ^{
         userService = [[[self class] alloc] init];
     });
-//    [RCIM sharedRCIM].userInfoDataSource = self;
     return userService;
 }
 
@@ -31,6 +37,23 @@
     
     return nil;
 }
+
+- (void)getUserInfoWithUserId:(NSString *)userId completion:(void (^)(RCUserInfo * _Nonnull))completion {
+    for (RCUserInfo *userInfo in [self contacts]) {
+        if ([userInfo.userId isEqualToString:userId]) {
+            completion(userInfo);
+        }
+    }
+}
+
+- (void)getGroupInfoWithGroupId:(NSString *)groupId completion:(void (^)(RCGroup * _Nonnull))completion {
+    for (RCGroup *group in [self groups]) {
+        if ([group.groupId isEqualToString:groupId]) {
+            completion(group);
+        }
+    }
+}
+
 
 - (NSArray *)groups {
     RCGroup *group1 = [[RCGroup alloc] initWithGroupId:@"123456" groupName:@"测试群组1" portraitUri:@"https://upload-images.jianshu.io/upload_images/1253108-86c3301deb4da960.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"];

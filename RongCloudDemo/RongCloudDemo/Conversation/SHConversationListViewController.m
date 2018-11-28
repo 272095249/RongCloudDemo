@@ -8,6 +8,7 @@
 
 #import "SHConversationListViewController.h"
 #import "SHConversationViewController.h"
+#import "UserService.h"
 
 @implementation SHConversationListViewController
 
@@ -32,7 +33,26 @@
     SHConversationViewController *chatVC = [[SHConversationViewController alloc] init];
     chatVC.conversationType = model.conversationType;
     chatVC.targetId = model.targetId;
-    chatVC.title = model.conversationTitle; // 从会话列表这点击进入聊天页需要处理标题
+    
+    // 从会话列表这点击进入聊天页需要处理标题
+    switch (model.conversationType) {
+        case ConversationType_PRIVATE: {
+            [[UserService share] getUserInfoWithUserId:model.targetId completion:^(RCUserInfo * _Nonnull userInfo) {
+                chatVC.title = userInfo.name;
+            }];
+            break;
+        }
+        case ConversationType_DISCUSSION: {
+            [[UserService share] getGroupInfoWithGroupId:model.targetId completion:^(RCGroup * _Nonnull groupInfo) {
+                chatVC.title = groupInfo.groupName;
+            }];
+            break;
+        }
+        default:
+            chatVC.title = model.conversationTitle;
+            break;
+    }
+    
     chatVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:chatVC animated:YES];
 }
