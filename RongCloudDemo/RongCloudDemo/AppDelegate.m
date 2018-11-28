@@ -10,6 +10,7 @@
 #import "RootTabBarController.h"
 #import <RongIMKit/RongIMKit.h>
 #import "UserService.h"
+#import "SHMessageContent.h"
 
 @interface AppDelegate ()
 
@@ -59,6 +60,9 @@
     // 设置后显示好友信息
     [RCIM sharedRCIM].userInfoDataSource = [UserService share];
     [RCIM sharedRCIM].groupInfoDataSource = [UserService share];
+    
+    // 注册该自定义消息类：只有注册了该消息类型之后，SDK 才能识别和编码、解码该类型的消息。
+    [[RCIM sharedRCIM] registerMessageType:[SHMessageContent class]];
 }
 
 
