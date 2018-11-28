@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RootTabBarController.h"
 #import <RongIMKit/RongIMKit.h>
 
 @interface AppDelegate ()
@@ -18,7 +19,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.tabbarVC = [[RootTabBarController alloc] init];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:self.tabbarVC];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     
+    
+    [self initRongCloud];
+    
+    return YES;
+}
+
+- (void)initRongCloud {
     // 初始化
     [[RCIM sharedRCIM] initWithAppKey:@"z3v5yqkbz1yc0"];
     
@@ -26,15 +39,13 @@
     [[RCIM sharedRCIM] connectWithToken:@"HwKxNPHM7SmCIvp53jSQV/4OQSvLWK4YEBdyxsEdTU6dpkGJUv1T5UgJnupbSZzZ21utmyF+JiAkhUFgsdZ4H2VT/UbiGZiy" success:^(NSString *userId) {
         NSLog(@"登陆成功。当前登录的用户ID：%@", userId);
     } error:^(RCConnectErrorCode status) {
-         NSLog(@"登陆的错误码为:%d", status);
+        NSLog(@"登陆的错误码为:%ld", (long)status);
     } tokenIncorrect:^{
         //token过期或者不正确。
         //如果设置了token有效期并且token过期，请重新请求您的服务器获取新的token
         //如果没有设置token有效期却提示token错误，请检查您客户端和服务器的appkey是否匹配，还有检查您获取token的流程。
         NSLog(@"token错误");
     }];
-    
-    return YES;
 }
 
 

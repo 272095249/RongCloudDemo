@@ -1,0 +1,45 @@
+//
+//  RootTabBarController.m
+//  RongCloudDemo
+//
+//  Created by 孙浩 on 2018/11/28.
+//  Copyright © 2018 孙浩. All rights reserved.
+//
+
+#import "RootTabBarController.h"
+#import "SHContactsListViewController.h"
+#import "SHConversationListViewController.h"
+#import "SHDiscussionListViewController.h"
+#import "SHGroupListViewController.h"
+
+
+@interface RootTabBarController ()
+
+@end
+
+@implementation RootTabBarController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    NSArray *controllers = @[@"SHConversationListViewController", @"SHContactsListViewController", @"SHDiscussionListViewController", @"SHGroupListViewController"];
+    NSArray *titles = @[@"消息", @"联系人", @"讨论组", @"群组"];
+    
+    NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:controllers.count];
+    
+    
+    for (int i = 0; i < controllers.count; i ++) {
+        Class class = NSClassFromString(controllers[i]);
+        UIViewController *vc = [[class alloc] init];
+        vc.title = titles[i];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        
+        [array addObject:nav];
+    }
+    
+    
+    self.viewControllers = array;
+    
+}
+
+@end
