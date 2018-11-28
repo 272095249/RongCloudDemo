@@ -1,5 +1,5 @@
 //
-//  UserListService.h
+//  UserService.h
 //  RongCloudDemo
 //
 //  Created by 孙浩 on 2018/11/28.
@@ -12,9 +12,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
-@interface UserListService : NSObject
+@interface UserService : NSObject
 
-+ (UserListService *)share;
++ (UserService *)share;
 
 - (RCUserInfo *)currentUser;
 

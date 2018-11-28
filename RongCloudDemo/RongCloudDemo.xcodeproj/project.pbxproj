@@ -51,7 +51,7 @@
 		3B5DA8AF21AE3FE9009148FE /* SHDiscussionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DA8A521AE3FE9009148FE /* SHDiscussionListViewController.m */; };
 		3B5DA8B021AE3FE9009148FE /* SHContactsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DA8A821AE3FE9009148FE /* SHContactsListViewController.m */; };
 		3B5DA8B121AE3FE9009148FE /* ContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DA8AB21AE3FE9009148FE /* ContactCell.m */; };
-		3B5DA8B821AE43B0009148FE /* UserListService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DA8B721AE43AF009148FE /* UserListService.m */; };
+		3B5DA8B821AE43B0009148FE /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DA8B721AE43AF009148FE /* UserService.m */; };
 		3BB72B0821AE3268005FA5F0 /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB72B0721AE3268005FA5F0 /* RootTabBarController.m */; };
 		3BB72B1121AE329B005FA5F0 /* SHConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB72B0C21AE329B005FA5F0 /* SHConversationViewController.m */; };
 		3BB72B1221AE329B005FA5F0 /* SHConversationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB72B0D21AE329B005FA5F0 /* SHConversationListViewController.m */; };
@@ -135,8 +135,8 @@
 		3B5DA8AB21AE3FE9009148FE /* ContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactCell.m; sourceTree = "<group>"; };
 		3B5DA8AC21AE3FE9009148FE /* ContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactCell.h; sourceTree = "<group>"; };
 		3B5DA8AD21AE3FE9009148FE /* SHContactsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHContactsListViewController.h; sourceTree = "<group>"; };
-		3B5DA8B621AE43AF009148FE /* UserListService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserListService.h; sourceTree = "<group>"; };
-		3B5DA8B721AE43AF009148FE /* UserListService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserListService.m; sourceTree = "<group>"; };
+		3B5DA8B621AE43AF009148FE /* UserService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
+		3B5DA8B721AE43AF009148FE /* UserService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserService.m; sourceTree = "<group>"; };
 		3BB72B0621AE3268005FA5F0 /* RootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBarController.h; sourceTree = "<group>"; };
 		3BB72B0721AE3268005FA5F0 /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
 		3BB72B0C21AE329B005FA5F0 /* SHConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHConversationViewController.m; sourceTree = "<group>"; };
@@ -384,8 +384,8 @@
 		3B5DA8B221AE425D009148FE /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				3B5DA8B621AE43AF009148FE /* UserListService.h */,
-				3B5DA8B721AE43AF009148FE /* UserListService.m */,
+				3B5DA8B621AE43AF009148FE /* UserService.h */,
+				3B5DA8B721AE43AF009148FE /* UserService.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -623,7 +623,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B5DA8B821AE43B0009148FE /* UserListService.m in Sources */,
+				3B5DA8B821AE43B0009148FE /* UserService.m in Sources */,
 				3BB72B1221AE329B005FA5F0 /* SHConversationListViewController.m in Sources */,
 				3BB72B0821AE3268005FA5F0 /* RootTabBarController.m in Sources */,
 				3B5DA8AF21AE3FE9009148FE /* SHDiscussionListViewController.m in Sources */,

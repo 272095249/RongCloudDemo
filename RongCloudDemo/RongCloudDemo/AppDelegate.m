@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "RootTabBarController.h"
 #import <RongIMKit/RongIMKit.h>
+#import "UserService.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +22,8 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.tabbarVC = [[RootTabBarController alloc] init];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:self.tabbarVC];
+    self.window.rootViewController = self.tabbarVC;
+    // [[UINavigationController alloc] initWithRootViewController:self.tabbarVC];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
@@ -46,6 +48,9 @@
         //如果没有设置token有效期却提示token错误，请检查您客户端和服务器的appkey是否匹配，还有检查您获取token的流程。
         NSLog(@"token错误");
     }];
+    
+//    [RCIM sharedRCIM].userInfoDataSource = [UserService share];
+//    [RCIM sharedRCIM].groupInfoDataSource = [UserService share];
 }
 
 

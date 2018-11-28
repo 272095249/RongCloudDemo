@@ -8,7 +8,7 @@
 
 #import "SHContactsListViewController.h"
 #import "SHConversationViewController.h"
-#import "UserListService.h"
+#import "UserService.h"
 #import <RongIMKit/RongIMKit.h>
 #import <UIImageView+WebCache.h>
 #import "ContactCell.h"
@@ -46,7 +46,7 @@ static NSString *cellID = @"ContactCellID";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return [[UserListService share] contacts].count;
+    return [[UserService share] contacts].count;
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
@@ -56,7 +56,7 @@ static NSString *cellID = @"ContactCellID";
         cell = [[ContactCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
     }
     
-    RCUserInfo * userInfo = [[UserListService share] contacts][indexPath.row];
+    RCUserInfo * userInfo = [[UserService share] contacts][indexPath.row];
     cell.titleLabel.text = userInfo.name;
     cell.idLabel.text = userInfo.userId;
     [cell.headerImageView sd_setImageWithURL:[NSURL URLWithString:userInfo.portraitUri] placeholderImage:[UIImage imageNamed:@"avatar_users_72px_1108447_easyicon.net"]];
@@ -66,12 +66,23 @@ static NSString *cellID = @"ContactCellID";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 56;
+    return 66;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    RCUserInfo *userInfo = [[UserListService share] contacts][indexPath.row];
+    RCUserInfo *userInfo = [[UserService share] contacts][indexPath.row];
+    
+    // 点击自己时需要处理
+    SHConversationViewController *chatVC = [[SHConversationViewController alloc] init];
+    chatVC.conversationType = ConversationType_PRIVATE;
+    chatVC.targetId = userInfo.userId;
+    chatVC.title = userInfo.name;
+    chatVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:chatVC animated:YES];
+    
+    
+    
     NSLog(@"%ld -- %@ -- %@ -- %@", (long)indexPath.row, userInfo.name, userInfo.userId, userInfo.portraitUri);
 }
 

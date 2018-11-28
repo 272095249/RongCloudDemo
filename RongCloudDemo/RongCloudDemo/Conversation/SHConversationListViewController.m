@@ -30,11 +30,14 @@
 - (void)onSelectedTableRow:(RCConversationModelType)conversationModelType conversationModel:(RCConversationModel *)model atIndexPath:(NSIndexPath *)indexPath {
     
     SHConversationViewController *chatVC = [[SHConversationViewController alloc] init];
-    chatVC.conversationType = 0;
-    chatVC.targetId = @"model.id";
-    chatVC.title = @"";
+    chatVC.conversationType = model.conversationType;
+    chatVC.targetId = model.targetId;
+    chatVC.title = model.conversationTitle; // 从会话列表这点击进入聊天页需要处理,讨论组和群聊可以直接使用
+    chatVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:chatVC animated:YES];
 }
+
+
 
 
 @end

@@ -1,23 +1,35 @@
 //
-//  UserListService.m
+//  UserService.m
 //  RongCloudDemo
 //
 //  Created by 孙浩 on 2018/11/28.
 //  Copyright © 2018 孙浩. All rights reserved.
 //
 
-#import "UserListService.h"
+#import "UserService.h"
+#import <RongIMKit/RongIMKit.h>
 
-@implementation UserListService
+@implementation UserService
 
-+ (UserListService *)share {
++ (UserService *)share {
     
-    static UserListService *userList = nil;
+    static UserService *userService = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        userList = [[[self class] alloc] init];
+        userService = [[[self class] alloc] init];
     });
-    return userList;
+//    [RCIM sharedRCIM].userInfoDataSource = self;
+    return userService;
+}
+
+- (BOOL)isLogin {
+    return [[NSUserDefaults standardUserDefaults] objectForKey:@"isLogin"];
+}
+
+- (RCUserInfo *)currentUser {
+    
+    
+    return nil;
 }
 
 - (NSArray *)contacts {

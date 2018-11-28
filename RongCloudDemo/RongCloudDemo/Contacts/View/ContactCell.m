@@ -21,19 +21,19 @@
 }
 
 - (void)setupUI {
-    self.headerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(30, 10, 36, 36)];
+    self.headerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(30, 10, 46, 46)];
     [self.contentView addSubview:self.headerImageView];
     
-    self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(86, 10, 50, 20)];
+    self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(86, 10, 100, 30)];
     [self.contentView addSubview:self.titleLabel];
     
-    self.idLabel = [[UILabel alloc] initWithFrame:CGRectMake(86, 30, 100, 14)];
+    self.idLabel = [[UILabel alloc] initWithFrame:CGRectMake(86, 40, 100, 14)];
     self.idLabel.font = [UIFont systemFontOfSize:14];
-    self.idLabel.tintColor = UIColor.grayColor;
+    self.idLabel.textColor = [UIColor grayColor];
     [self.contentView addSubview:self.idLabel];
     
     
-    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 55, [UIScreen mainScreen].bounds.size.width, 1)];
+    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 65, [UIScreen mainScreen].bounds.size.width, 1)];
     lineView.backgroundColor = UIColor.grayColor;
     [self.contentView addSubview:lineView];
     
