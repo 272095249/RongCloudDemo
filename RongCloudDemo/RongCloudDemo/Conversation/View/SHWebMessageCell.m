@@ -63,9 +63,8 @@
     [self.bgView addGestureRecognizer:tap];
 }
 
-- (void)setModel:(RCMessageModel *)model {
-    [super setModel:model];
-    
+- (void)setDataModel:(RCMessageModel *)model {
+    [super setDataModel:model];
     [self updateUI];
 }
 
