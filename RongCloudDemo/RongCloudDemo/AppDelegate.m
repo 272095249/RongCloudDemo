@@ -27,15 +27,41 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    
     [self initRongCloud];
     
+    // 请求推送权限
+    if ([application
+         respondsToSelector:@selector(registerUserNotificationSettings:)]) {
+        // 注册推送, 用于iOS8以及iOS8之后的系统
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert) categories:nil];
+        [application registerUserNotificationSettings:settings];
+    }
+    
+    // 远程推送的内容
+    NSDictionary *remoteNotificationUserInfo = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey];
+    NSLog(@"%@", remoteNotificationUserInfo);
+    
     return YES;
+}
+
+// 注册用户通知设置
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
+    [application registerForRemoteNotifications];
+}
+
+// 设置deviceToken
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // deviceToken
+    NSString *token =
+    [[[[deviceToken description] stringByReplacingOccurrencesOfString:@"<" withString:@""] stringByReplacingOccurrencesOfString:@">" withString:@""] stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    [[RCIMClient sharedRCIMClient] setDeviceToken:token];
 }
 
 - (void)initRongCloud {
     // 初始化
     [[RCIM sharedRCIM] initWithAppKey:@"z3v5yqkbz1yc0"];
+    
     
     [RCIM sharedRCIM].globalNavigationBarTintColor = UIColor.blueColor;
     // 将连接服务器更改到login
@@ -63,8 +89,8 @@
     
     // 注册该自定义消息类：只有注册了该消息类型之后，SDK 才能识别和编码、解码该类型的消息。
     [[RCIM sharedRCIM] registerMessageType:SHMessageContent.class];
+    
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
