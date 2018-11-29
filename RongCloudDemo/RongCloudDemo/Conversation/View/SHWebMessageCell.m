@@ -11,7 +11,7 @@
 #import <UIImageView+WebCache.h>
 
 #define kBgWidth 200
-#define kBgHeight 90
+#define kBgHeight 80
 
 @implementation SHWebMessageCell
 /*!
@@ -42,19 +42,19 @@
 
 - (void)setupUI {
     
-    self.bgView = [[UIImageView alloc] initWithFrame:CGRectZero];
+    self.bgView = [[UIImageView alloc] init];
     self.bgView.userInteractionEnabled = YES;
     [self.messageContentView addSubview:self.bgView];
     
-    self.picImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+    self.picImageView = [[UIImageView alloc] init];
     self.picImageView.userInteractionEnabled = YES;
     [self.bgView addSubview:self.picImageView];
     
-    self.titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    self.titleLabel = [[UILabel alloc] init];
     self.titleLabel.textColor = [UIColor redColor];
     [self.bgView addSubview:self.titleLabel];
     
-    self.detailLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    self.detailLabel = [[UILabel alloc] init];
     self.detailLabel.textColor = [UIColor grayColor];
     [self.bgView addSubview:self.detailLabel];
     
@@ -69,44 +69,44 @@
 }
 
 - (void)updateUI {
-    
+
     SHMessageContent *messageContent = (SHMessageContent *)self.model.content;
     if (messageContent) {
         self.titleLabel.text = messageContent.title;
         self.detailLabel.text = messageContent.detail;
         [self.picImageView sd_setImageWithURL:[NSURL URLWithString:messageContent.imageUrl] placeholderImage:[UIImage imageNamed:@"urlPic"]];
     }
-    
+
     CGSize bgViewSize = CGSizeMake(kBgWidth, kBgHeight);
     // 消息内容View的Rect
     CGRect messageContetViewRect = self.messageContentView.frame;
-    
+
     if (MessageDirection_RECEIVE == self.messageDirection) { // 接受
-        self.picImageView.frame = CGRectMake(20, 10, 70, 70);
+        self.picImageView.frame = CGRectMake(20, 5, 70, 70);
         self.titleLabel.frame = CGRectMake(100, 10, 150, 20);
         self.detailLabel.frame = CGRectMake(100, 40, 150, 20);
-        
+
         messageContetViewRect.size.width = bgViewSize.width;
         messageContetViewRect.size.height = bgViewSize.height;
-        
+
         self.messageContentView.frame = messageContetViewRect;
         self.bgView.frame = CGRectMake(0, 0, bgViewSize.width, bgViewSize.height);
-        
+
         UIImage *image = [RCKitUtility imageNamed:@"chat_from_bg_normal" ofBundle:@"RongCloud.bundle"];
         self.bgView.image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(image.size.height * 0.8, image.size.width * 0.8, image.size.height * 0.2, image.size.width * 0.2)];
     } else { // 发送
         self.picImageView.frame = CGRectMake(10, 10, 70, 70);
-        self.titleLabel.frame = CGRectMake(90, 20, 150, 20);
-        self.detailLabel.frame = CGRectMake(90, 50, 150, 20);
-        
+        self.titleLabel.frame = CGRectMake(90, 15, 150, 20);
+        self.detailLabel.frame = CGRectMake(90, 45, 150, 20);
+
         messageContetViewRect.size.width = bgViewSize.width;
         messageContetViewRect.size.height = bgViewSize.height;
-        
+
         messageContetViewRect.origin.x = self.baseContentView.bounds.size.width - (messageContetViewRect.size.width + HeadAndContentSpacing + [RCIM sharedRCIM].globalMessagePortraitSize.width + 10);
-        
+
         self.messageContentView.frame = messageContetViewRect;
         self.bgView.frame = CGRectMake(0, 0, bgViewSize.width, bgViewSize.height);
-        
+
         UIImage *image = [RCKitUtility imageNamed:@"chat_to_bg_normal" ofBundle:@"RongCloud.bundle"];
         self.bgView.image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(image.size.height * 0.8, image.size.width * 0.2, image.size.height * 0.2, image.size.width * 0.8)];
     }
