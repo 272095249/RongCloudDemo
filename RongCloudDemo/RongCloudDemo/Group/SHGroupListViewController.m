@@ -70,7 +70,6 @@ static NSString *groupCellID = @"GroupCellID";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     RCGroup *group = [[UserService share] groups][indexPath.row];
-    // 点击自己时需要处理
     
     SHConversationViewController *chatVC = [[SHConversationViewController alloc] init];
     chatVC.conversationType = ConversationType_GROUP;
