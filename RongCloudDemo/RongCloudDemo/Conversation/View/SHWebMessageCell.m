@@ -29,7 +29,7 @@
  */
 + (CGSize)sizeForMessageModel:(RCMessageModel *)model withCollectionViewWidth:(CGFloat)collectionViewWidth referenceExtraHeight:(CGFloat)extraHeight {
     
-    return CGSizeMake([UIScreen mainScreen].bounds.size.width, kBgHeight + 55);
+    return CGSizeMake([UIScreen mainScreen].bounds.size.width, kBgHeight + extraHeight);
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
