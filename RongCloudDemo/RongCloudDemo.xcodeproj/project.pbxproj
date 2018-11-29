@@ -59,6 +59,9 @@
 		3BCEA1D321AE69270029F608 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA1D221AE69270029F608 /* libSDWebImage.a */; };
 		3BCEA1D721AE7CB40029F608 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA1D621AE7CB40029F608 /* LoginViewController.m */; };
 		3BCEA1DB21AEA2140029F608 /* SHMessageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA1DA21AEA2140029F608 /* SHMessageContent.m */; };
+		3BCEA1DF21AF80920029F608 /* SHWebMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA1DE21AF80920029F608 /* SHWebMessageCell.m */; };
+		3BCEA1E121AF8CEE0029F608 /* urlPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEA1E021AF8CEE0029F608 /* urlPic.png */; };
+		3BCEA1E321AF8F3B0029F608 /* Swift.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEA1E221AF8F3B0029F608 /* Swift.png */; };
 		5C4BEB6A57B16FF05C8D1DA6 /* libPods-RongCloudDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEC41A607DFD8E12EF57BE7 /* libPods-RongCloudDemoUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -151,6 +154,10 @@
 		3BCEA1D621AE7CB40029F608 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		3BCEA1D921AEA2140029F608 /* SHMessageContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHMessageContent.h; sourceTree = "<group>"; };
 		3BCEA1DA21AEA2140029F608 /* SHMessageContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHMessageContent.m; sourceTree = "<group>"; };
+		3BCEA1DD21AF80920029F608 /* SHWebMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHWebMessageCell.h; sourceTree = "<group>"; };
+		3BCEA1DE21AF80920029F608 /* SHWebMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHWebMessageCell.m; sourceTree = "<group>"; };
+		3BCEA1E021AF8CEE0029F608 /* urlPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = urlPic.png; sourceTree = "<group>"; };
+		3BCEA1E221AF8F3B0029F608 /* Swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Swift.png; sourceTree = "<group>"; };
 		5EF2A8743AF76573B6D2C638 /* Pods-RongCloudDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoTests/Pods-RongCloudDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7CE38D9F1CC4A821E2C2112C /* Pods-RongCloudDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8586DDC8AB439F48653F578A /* Pods-RongCloudDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoUITests/Pods-RongCloudDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -322,6 +329,8 @@
 		3B5DA88C21AE3F9C009148FE /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				3BCEA1E221AF8F3B0029F608 /* Swift.png */,
+				3BCEA1E021AF8CEE0029F608 /* urlPic.png */,
 				3BCEA1D021AE4D600029F608 /* avatar_users_72px_1108447_easyicon.net.png */,
 				3B5DA88D21AE3F9C009148FE /* IMLib */,
 				3B5DA89121AE3F9C009148FE /* IMKit */,
@@ -400,7 +409,8 @@
 		3BB72B0B21AE329B005FA5F0 /* Conversation */ = {
 			isa = PBXGroup;
 			children = (
-				3BCEA1D821AEA1F80029F608 /* View */,
+				3BCEA1DC21AF7F870029F608 /* View */,
+				3BCEA1D821AEA1F80029F608 /* Model */,
 				3BB72B0F21AE329B005FA5F0 /* SHConversationListViewController.h */,
 				3BB72B0D21AE329B005FA5F0 /* SHConversationListViewController.m */,
 				3BB72B0E21AE329B005FA5F0 /* SHConversationViewController.h */,
@@ -418,11 +428,20 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		3BCEA1D821AEA1F80029F608 /* View */ = {
+		3BCEA1D821AEA1F80029F608 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				3BCEA1D921AEA2140029F608 /* SHMessageContent.h */,
 				3BCEA1DA21AEA2140029F608 /* SHMessageContent.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BCEA1DC21AF7F870029F608 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEA1DD21AF80920029F608 /* SHWebMessageCell.h */,
+				3BCEA1DE21AF80920029F608 /* SHWebMessageCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -551,8 +570,10 @@
 				3B1A7E6E21ACDF00000B06D4 /* Assets.xcassets in Resources */,
 				3B1A7E6C21ACDEFF000B06D4 /* Main.storyboard in Resources */,
 				3BCEA1D121AE4D610029F608 /* avatar_users_72px_1108447_easyicon.net.png in Resources */,
+				3BCEA1E321AF8F3B0029F608 /* Swift.png in Resources */,
 				3B5DA89D21AE3F9C009148FE /* RongCloudKit.strings in Resources */,
 				3B5DA89F21AE3F9C009148FE /* Emoji.plist in Resources */,
+				3BCEA1E121AF8CEE0029F608 /* urlPic.png in Resources */,
 				3B5DA8A021AE3F9C009148FE /* RongCloud.bundle in Resources */,
 				3B5DA89C21AE3F9C009148FE /* RCColor.plist in Resources */,
 				3B5DA89B21AE3F9C009148FE /* RCConfig.plist in Resources */,
@@ -661,6 +682,7 @@
 				3B5DA8B021AE3FE9009148FE /* SHContactsListViewController.m in Sources */,
 				3BCEA1D721AE7CB40029F608 /* LoginViewController.m in Sources */,
 				3B5DA8AE21AE3FE9009148FE /* SHGroupListViewController.m in Sources */,
+				3BCEA1DF21AF80920029F608 /* SHWebMessageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

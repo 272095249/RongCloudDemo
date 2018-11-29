@@ -62,7 +62,7 @@
     [RCIM sharedRCIM].groupInfoDataSource = [UserService share];
     
     // 注册该自定义消息类：只有注册了该消息类型之后，SDK 才能识别和编码、解码该类型的消息。
-    [[RCIM sharedRCIM] registerMessageType:[SHMessageContent class]];
+    [[RCIM sharedRCIM] registerMessageType:SHMessageContent.class];
 }
 
 

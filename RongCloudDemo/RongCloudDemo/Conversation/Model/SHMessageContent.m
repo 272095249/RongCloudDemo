@@ -7,15 +7,16 @@
 //
 
 #import "SHMessageContent.h"
+#import <RongIMKit/RongIMKit.h>
 
 @implementation SHMessageContent
 
-+ (instancetype)messageWithTitle:(NSString *)title detail:(NSString *)detail image:(UIImage *)image url:(NSString *)url {
++ (instancetype)messageWithTitle:(NSString *)title detail:(NSString *)detail imageUrl:(NSString *)imageUrl url:(NSString *)url {
     
     SHMessageContent *message = [SHMessageContent new];
     message.title = title;
     message.detail = detail;
-    message.image = image;
+    message.imageUrl = imageUrl;
     message.url = url;
     return message;
 }
@@ -35,7 +36,7 @@
     if (self = [super init]) {
         self.title = [aDecoder decodeObjectForKey:@"title"];
         self.detail = [aDecoder decodeObjectForKey:@"detail"];
-        self.image = [UIImage imageWithData:[aDecoder decodeObjectForKey:@"image"]];
+        self.imageUrl = [aDecoder decodeObjectForKey:@"imageUrl"];
         self.url = [aDecoder decodeObjectForKey:@"url"];
     }
     return self;
@@ -45,19 +46,34 @@
 - (void)encodeWithCoder:(NSCoder *)aCoder {
     [aCoder encodeObject:self.title forKey:@"title"];
     [aCoder encodeObject:self.detail forKey:@"detail"];
-    [aCoder encodeObject:UIImagePNGRepresentation(self.image) forKey:@"image"];
+    [aCoder encodeObject:self.imageUrl forKey:@"imageUrl"];
     [aCoder encodeObject:self.url forKey:@"url"];
 }
 
 // 将消息内容编码成json
 - (NSData *)encode {
-     NSMutableDictionary *dataDict = [NSMutableDictionary dictionary];
+    NSMutableDictionary *dataDict = [NSMutableDictionary dictionary];
     [dataDict setObject:self.title forKey:@"title"];
     [dataDict setObject:self.detail forKey:@"detail"];
-    [dataDict setObject:self.image forKey:@"image"];
+    [dataDict setObject:self.imageUrl forKey:@"imageUrl"];
     [dataDict setObject:self.url forKey:@"url"];
     
     // 需存储发送消息用户的信息
+    if (self.senderUserInfo) {
+        NSMutableDictionary *userInfoDict = [NSMutableDictionary dictionary];
+        if (self.senderUserInfo.name) {
+            [userInfoDict setObject:self.senderUserInfo.name forKey:@"name"];
+        }
+        if (self.senderUserInfo.portraitUri) {
+            [userInfoDict setObject:self.senderUserInfo.portraitUri forKeyedSubscript:@"portraitUri"];
+        }
+        if (self.senderUserInfo.userId) {
+            [userInfoDict setObject:self.senderUserInfo.userId forKeyedSubscript:@"userId"];
+        }
+        [dataDict setObject:userInfoDict forKey:@"userInfo"];
+    }
+    
+    
     
     NSData *data = [NSJSONSerialization dataWithJSONObject:dataDict options:kNilOptions error:nil];
     
@@ -73,10 +89,10 @@
             
             self.title = dict[@"title"];
             self.detail = dict[@"detail"];
-            self.image = dict[@"image"];
+            self.imageUrl = dict[@"imageUrl"];
             self.url = dict[@"url"];
-//            NSDictionary *userinfoDic = dict[@"user"];
-//            [self decodeUserInfo:userinfoDic];
+            NSDictionary *userInfoDict = dict[@"userInfo"];
+            [self decodeUserInfo:userInfoDict];
         }
     }
 }

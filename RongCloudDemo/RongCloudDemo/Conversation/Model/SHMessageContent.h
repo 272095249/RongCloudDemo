@@ -12,14 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 #define SHRCRecommendMessageTypeIdentifier @"RCD:SHRecommendMsg"
 
-@interface SHMessageContent : RCMessageContent<NSCoding>
+@interface SHMessageContent : RCMessageContent<NSCoding, RCMessageContentView>
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *detail;
-@property (nonatomic, strong) UIImage *image;
+@property (nonatomic, strong) NSString *imageUrl;
 @property (nonatomic, strong) NSString *url;
 
-+ (instancetype)messageWithTitle:(NSString *)title detail:(NSString *)detail image:(UIImage *)image url:(NSString *)url;
++ (instancetype)messageWithTitle:(NSString *)title detail:(NSString *)detail imageUrl:(NSString *)imageUrl url:(NSString *)url;
 
 
 @end

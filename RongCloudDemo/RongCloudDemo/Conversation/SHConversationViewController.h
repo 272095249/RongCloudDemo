@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SHConversationViewController : RCConversationViewController
+@interface SHConversationViewController : RCConversationViewController<RCMessageCellDelegate>
 
 @end
 
