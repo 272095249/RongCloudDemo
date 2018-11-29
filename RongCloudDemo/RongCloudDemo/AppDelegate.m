@@ -37,6 +37,7 @@
     // 初始化
     [[RCIM sharedRCIM] initWithAppKey:@"z3v5yqkbz1yc0"];
     
+    [RCIM sharedRCIM].globalNavigationBarTintColor = UIColor.blueColor;
     // 将连接服务器更改到login
     // 连接服务器
     // HarrySun -- HwKxNPHM7SmCIvp53jSQV/4OQSvLWK4YEBdyxsEdTU6dpkGJUv1T5UgJnupbSZzZ21utmyF+JiAkhUFgsdZ4H2VT/UbiGZiy
