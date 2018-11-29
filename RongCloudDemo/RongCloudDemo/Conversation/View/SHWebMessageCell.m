@@ -61,6 +61,9 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction)];
     tap.numberOfTapsRequired = 1;
     [self.bgView addGestureRecognizer:tap];
+    
+    UILongPressGestureRecognizer *longGes = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longAction:)];
+    [self.bgView addGestureRecognizer:longGes];
 }
 
 - (void)setDataModel:(RCMessageModel *)model {
@@ -115,6 +118,18 @@
 - (void)tapAction {
     if([self.delegate respondsToSelector:@selector(didTapMessageCell:)])
         [self.delegate didTapMessageCell:self.model];
+}
+
+- (void)longAction:(id)sender {
+    
+    UILongPressGestureRecognizer *press = (UILongPressGestureRecognizer *)sender;
+    if (press.state == UIGestureRecognizerStateEnded) {
+        return;
+    } else if (press.state == UIGestureRecognizerStateBegan) {
+        if ([self.delegate respondsToSelector:@selector(didLongTouchMessageCell:inView:)]) {
+            [self.delegate didLongTouchMessageCell:self.model inView:self.bgView];
+        }
+    }
 }
 
 @end

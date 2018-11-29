@@ -57,6 +57,10 @@
     [alert show];
 }
 
+- (void)didLongTouchMessageCell:(RCMessageModel *)model inView:(UIView *)view {
+    [super didLongTouchMessageCell:model inView:view];
+}
+
 //按钮点击事件的代理
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     NSLog(@"clickButtonAtIndex:%d",(int)buttonIndex);
