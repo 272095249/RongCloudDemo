@@ -13,6 +13,11 @@
 // 聊天界面
 @implementation SHConversationViewController
 
+//- (void)viewWillAppear:(BOOL)animated {
+//    // 设置输入框的默认输入模式
+//    self.defaultInputType = RCChatSessionInputBarInputVoice;
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
