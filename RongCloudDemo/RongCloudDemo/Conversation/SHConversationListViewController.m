@@ -10,6 +10,10 @@
 #import "SHConversationViewController.h"
 #import "UserService.h"
 
+@interface SHConversationViewController ()
+
+@end
+
 @implementation SHConversationListViewController
 
 
@@ -23,7 +27,6 @@
                                         ]];
     
 }
-
 
 - (void)onSelectedTableRow:(RCConversationModelType)conversationModelType conversationModel:(RCConversationModel *)model atIndexPath:(NSIndexPath *)indexPath {
     
@@ -53,8 +56,5 @@
     chatVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:chatVC animated:YES];
 }
-
-
-
 
 @end
