@@ -49,12 +49,19 @@
     
     SHMessageContent *content = (SHMessageContent *)model.content;
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"跳转网页"
-                                                    message:content.url
-                                                   delegate:self
-                                          cancelButtonTitle:@"Cancel"
-                                          otherButtonTitles:@"OK",nil];
-    [alert show];
+    // 处理聊天室中正常消息点击找不到 url 的崩溃
+    if (content.url) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"跳转网页"
+                                                        message:content.url
+                                                       delegate:self
+                                              cancelButtonTitle:@"Cancel"
+                                              otherButtonTitles:@"OK",nil];
+        [alert show];
+    } else {
+        [super didTapMessageCell:model];
+    }
+    
+    
 }
 
 - (void)didLongTouchMessageCell:(RCMessageModel *)model inView:(UIView *)view {
