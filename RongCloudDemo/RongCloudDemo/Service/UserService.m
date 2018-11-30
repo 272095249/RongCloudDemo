@@ -15,7 +15,6 @@
     if (self = [super init]) {
         [RCIM sharedRCIM].userInfoDataSource = self;
         [RCIM sharedRCIM].groupInfoDataSource = self;
-        [RCIM sharedRCIM].receiveMessageDelegate = self;
     }
     return self;
 }
@@ -32,12 +31,6 @@
 
 - (BOOL)isLogin {
     return [[NSUserDefaults standardUserDefaults] objectForKey:@"isLogin"];
-}
-
-// 接收消息回调
-- (void)onRCIMReceiveMessage:(RCMessage *)message left:(int)left {
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"receiveMessage" object:self];
 }
 
 - (void)getUserInfoWithUserId:(NSString *)userId completion:(void (^)(RCUserInfo * _Nonnull))completion {

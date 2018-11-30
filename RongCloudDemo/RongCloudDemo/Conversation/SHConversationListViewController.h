@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SHConversationListViewController : RCConversationListViewController
+@interface SHConversationListViewController : RCConversationListViewController<RCIMReceiveMessageDelegate>
 
 @end
 

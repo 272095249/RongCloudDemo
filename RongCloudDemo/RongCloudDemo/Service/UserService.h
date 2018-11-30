@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
-@interface UserService : NSObject<RCIMUserInfoDataSource,RCIMGroupInfoDataSource, RCIMReceiveMessageDelegate>
+@interface UserService : NSObject<RCIMUserInfoDataSource,RCIMGroupInfoDataSource>
 
 + (UserService *)share;
 
