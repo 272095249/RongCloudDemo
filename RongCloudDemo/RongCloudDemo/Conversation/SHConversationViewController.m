@@ -9,6 +9,7 @@
 #import "SHConversationViewController.h"
 #import "SHMessageContent.h"
 #import "SHWebMessageCell.h"
+#import "SHExpressionTab.h"
 
 // 聊天界面
 @implementation SHConversationViewController
@@ -21,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setupEmotionTab];
+    
     [self.chatSessionInputBarControl.pluginBoardView insertItemWithImage:[UIImage imageNamed:@"urlPic"] title:@"链接" tag:2001];
     /*!
      注册自定义消息的Cell
@@ -32,6 +35,16 @@
      你需要在cell中重写RCMessageBaseCell基类的sizeForMessageModel:withCollectionViewWidth:referenceExtraHeight:来计算cell的高度。
      */
     [self registerClass:[SHWebMessageCell class] forMessageClass:[SHMessageContent class]];
+}
+
+- (void)setupEmotionTab {
+    UIImage *icon = [UIImage imageNamed:@"桃心"];
+    
+    SHExpressionTab *expressionTab = [SHExpressionTab new];
+    expressionTab.identify = @"1";
+    expressionTab.image = icon;
+    expressionTab.pageCount = 2;
+    [self.chatSessionInputBarControl.emojiBoardView addEmojiTab:expressionTab];
 }
 
 // 功能面板点击
