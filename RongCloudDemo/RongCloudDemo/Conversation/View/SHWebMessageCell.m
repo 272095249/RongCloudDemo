@@ -11,7 +11,7 @@
 #import <UIImageView+WebCache.h>
 
 #define kBgWidth 200
-#define kBgHeight 80
+#define kBgHeight 90
 
 @implementation SHWebMessageCell
 /*!
