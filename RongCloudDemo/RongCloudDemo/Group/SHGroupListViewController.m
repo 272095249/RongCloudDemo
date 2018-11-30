@@ -15,6 +15,8 @@
 @interface SHGroupListViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSArray *titles;
+@property (nonatomic, strong) NSArray *ids;
 
 @end
 
@@ -24,6 +26,9 @@ static NSString *groupCellID = @"GroupCellID";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.titles = @[@"测试聊天室1", @"测试聊天室2", @"测试聊天室3"];
+    self.ids = @[@"10001", @"10002", @"10003"];
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     self.tableView.delegate = self;
@@ -39,12 +44,12 @@ static NSString *groupCellID = @"GroupCellID";
 
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return [[UserService share] groups].count;
+    return section == 0 ? [[UserService share] groups].count : self.titles.count;
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
@@ -54,10 +59,15 @@ static NSString *groupCellID = @"GroupCellID";
         cell = [[ContactCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:groupCellID];
     }
     
-    RCGroup *group = [[UserService share] groups][indexPath.row];
-    cell.titleLabel.text = group.groupName;
-    cell.idLabel.text = group.groupId;
-    [cell.headerImageView sd_setImageWithURL:[NSURL URLWithString:group.portraitUri] placeholderImage:[UIImage imageNamed:@"avatar_users_72px_1108447_easyicon.net"]];
+    if (indexPath.section == 0) {
+        RCGroup *group = [[UserService share] groups][indexPath.row];
+        cell.titleLabel.text = group.groupName;
+        cell.idLabel.text = group.groupId;
+        [cell.headerImageView sd_setImageWithURL:[NSURL URLWithString:group.portraitUri] placeholderImage:[UIImage imageNamed:@"avatar_users_72px_1108447_easyicon.net"]];
+    } else {
+        cell.titleLabel.text = self.titles[indexPath.row];
+        cell.idLabel.text = self.ids[indexPath.row];
+    }
     
     return cell;
     
@@ -69,12 +79,18 @@ static NSString *groupCellID = @"GroupCellID";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    RCGroup *group = [[UserService share] groups][indexPath.row];
-    
     SHConversationViewController *chatVC = [[SHConversationViewController alloc] init];
-    chatVC.conversationType = ConversationType_GROUP;
-    chatVC.targetId = group.groupId;
-    chatVC.title = group.groupName;
+    
+    if (indexPath.section == 0) {
+        RCGroup *group = [[UserService share] groups][indexPath.row];
+        chatVC.conversationType = ConversationType_GROUP;
+        chatVC.targetId = group.groupId;
+        chatVC.title = group.groupName;
+    } else {
+        chatVC.conversationType = ConversationType_CHATROOM;
+        chatVC.targetId = self.ids[indexPath.row];
+        chatVC.title = self.titles[indexPath.row];
+    }
     chatVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:chatVC animated:YES];
 }
