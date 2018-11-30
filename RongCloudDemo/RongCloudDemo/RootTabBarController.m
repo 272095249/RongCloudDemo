@@ -23,9 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSArray *controllers = @[@"SHConversationListViewController", @"SHContactsListViewController", @"SHDiscussionListViewController", @"SHGroupListViewController"];
-    NSArray *titles = @[@"消息", @"联系人", @"讨论组", @"群组"];
-    NSArray *images = @[@"消息", @"联系人", @"讨论组", @"群"];
+    NSArray *controllers = @[@"SHConversationListViewController", @"SHContactsListViewController", @"SHGroupListViewController"];
+    NSArray *titles = @[@"消息", @"联系人", @"群组/聊天室"];
+    NSArray *images = @[@"消息", @"联系人", @"群"];
     
     NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:controllers.count];
     
