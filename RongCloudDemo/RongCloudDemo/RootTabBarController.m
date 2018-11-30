@@ -13,6 +13,7 @@
 #import "SHGroupListViewController.h"
 #import "UserService.h"
 #import "Login/LoginViewController.h"
+#import "User/UserViewController.h"
 
 @interface RootTabBarController ()
 
@@ -23,9 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSArray *controllers = @[@"SHConversationListViewController", @"SHContactsListViewController", @"SHGroupListViewController"];
-    NSArray *titles = @[@"消息", @"联系人", @"群组/聊天室"];
-    NSArray *images = @[@"消息", @"联系人", @"群"];
+    NSArray *controllers = @[@"SHConversationListViewController", @"SHContactsListViewController", @"SHGroupListViewController", @"UserViewController"];
+    NSArray *titles = @[@"消息", @"联系人", @"群组/聊天室", @"个人"];
+    NSArray *images = @[@"消息", @"联系人", @"群", @"个人中心"];
     
     NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:controllers.count];
     

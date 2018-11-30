@@ -72,6 +72,7 @@
         [[UserService share] getUserInfoWithUserId:userId completion:^(RCUserInfo * _Nonnull userInfo) {
             // 当前用户的信息
             [RCIM sharedRCIM].currentUserInfo = userInfo;
+            [RCIM sharedRCIM].enableMessageRecall = YES;
         }];
         NSLog(@"登陆成功。当前登录的用户ID：%@", userId);
     } error:^(RCConnectErrorCode status) {

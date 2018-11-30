@@ -63,6 +63,7 @@
 		3BCEA1E121AF8CEE0029F608 /* urlPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEA1E021AF8CEE0029F608 /* urlPic.png */; };
 		3BCEA1E321AF8F3B0029F608 /* Swift.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEA1E221AF8F3B0029F608 /* Swift.png */; };
 		3BCEA1EF21B0E7330029F608 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA1EE21B0E7330029F608 /* UserViewController.m */; };
+		3BCEA1F321B0E8230029F608 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA1F221B0E8230029F608 /* HeaderView.m */; };
 		5C4BEB6A57B16FF05C8D1DA6 /* libPods-RongCloudDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEC41A607DFD8E12EF57BE7 /* libPods-RongCloudDemoUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -161,6 +162,8 @@
 		3BCEA1E221AF8F3B0029F608 /* Swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Swift.png; sourceTree = "<group>"; };
 		3BCEA1ED21B0E7330029F608 /* UserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
 		3BCEA1EE21B0E7330029F608 /* UserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		3BCEA1F121B0E8230029F608 /* HeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		3BCEA1F221B0E8230029F608 /* HeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 		5EF2A8743AF76573B6D2C638 /* Pods-RongCloudDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoTests/Pods-RongCloudDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7CE38D9F1CC4A821E2C2112C /* Pods-RongCloudDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8586DDC8AB439F48653F578A /* Pods-RongCloudDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoUITests/Pods-RongCloudDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -453,10 +456,20 @@
 		3BCEA1EC21B0E7040029F608 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				3BCEA1F021B0E7DE0029F608 /* View */,
 				3BCEA1ED21B0E7330029F608 /* UserViewController.h */,
 				3BCEA1EE21B0E7330029F608 /* UserViewController.m */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		3BCEA1F021B0E7DE0029F608 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEA1F121B0E8230029F608 /* HeaderView.h */,
+				3BCEA1F221B0E8230029F608 /* HeaderView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E58B714D45DB0C212E9E34C6 /* Pods */ = {
@@ -684,6 +697,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B5DA8B821AE43B0009148FE /* UserService.m in Sources */,
+				3BCEA1F321B0E8230029F608 /* HeaderView.m in Sources */,
 				3BB72B1221AE329B005FA5F0 /* SHConversationListViewController.m in Sources */,
 				3BB72B0821AE3268005FA5F0 /* RootTabBarController.m in Sources */,
 				3B5DA8AF21AE3FE9009148FE /* SHDiscussionListViewController.m in Sources */,
