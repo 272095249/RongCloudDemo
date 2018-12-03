@@ -43,11 +43,6 @@
     
    // 注册接收到消息的通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveMessage) name:@"receiveMessage" object:nil];
-    
-//    if (![[UserService share] isLogin]) {
-//        [self presentViewController:[LoginViewController new] animated:true completion:nil];
-//    }
-    
 }
 
 // 设置tabbar角标

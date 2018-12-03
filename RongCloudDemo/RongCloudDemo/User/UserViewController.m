@@ -8,6 +8,7 @@
 
 #import "UserViewController.h"
 #import "HeaderView.h"
+#import "LoginViewController.h"
 
 @interface UserViewController ()
 
@@ -43,6 +44,11 @@
 }
 
 - (void)logout {
+    [[RCIM sharedRCIM] logout];
+    
+    LoginViewController *vc = [LoginViewController new];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    [UIApplication sharedApplication].keyWindow.rootViewController = nav;
     NSLog(@"退出");
 }
 
