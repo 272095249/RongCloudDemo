@@ -81,7 +81,9 @@ static NSString *loginCellID = @"LoginCellID";
         [[UserService share] getUserInfoWithUserId:userId completion:^(RCUserInfo * _Nonnull userInfo) {
             // 当前用户的信息
             [RCIM sharedRCIM].currentUserInfo = userInfo;
+            // 是否开启消息撤回
             [RCIM sharedRCIM].enableMessageRecall = YES;
+            // 是否开启发送输入状态
             [RCIM sharedRCIM].enableTypingStatus = YES;
             dispatch_async(dispatch_get_main_queue(), ^{
                 RootTabBarController *vc = [[RootTabBarController alloc] init];

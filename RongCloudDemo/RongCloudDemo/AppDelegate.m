@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "RootTabBarController.h"
-#import <RongIMKit/RongIMKit.h>
 #import "UserService.h"
 #import "SHMessageContent.h"
 #import "Login/LoginViewController.h"
@@ -96,9 +95,20 @@
     [RCIM sharedRCIM].userInfoDataSource = [UserService share];
     [RCIM sharedRCIM].groupInfoDataSource = [UserService share];
     
+    // 设置消息接收的delegate
+    [RCIM sharedRCIM].receiveMessageDelegate = self;
+    
+    // 设置发送已读回执的会话类型
+    [RCIM sharedRCIM].enabledReadReceiptConversationTypeList = @[@(ConversationType_PRIVATE), @(ConversationType_GROUP) ];
+    
     // 注册该自定义消息类：只有注册了该消息类型之后，SDK 才能识别和编码、解码该类型的消息。
     [[RCIM sharedRCIM] registerMessageType:SHMessageContent.class];
+}
+
+// 接收消息回调
+- (void)onRCIMReceiveMessage:(RCMessage *)message left:(int)left {
     
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"receiveMessage" object:self];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

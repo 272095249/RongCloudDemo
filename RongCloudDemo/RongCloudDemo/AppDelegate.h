@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <RongIMKit/RongIMKit.h>
 
 @class RootTabBarController;
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, RCIMReceiveMessageDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong) RootTabBarController *tabbarVC;

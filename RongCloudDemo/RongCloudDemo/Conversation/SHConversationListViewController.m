@@ -16,15 +16,14 @@
 
 @implementation SHConversationListViewController
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"receiveMessage" object:self];
-}
+//- (void)viewWillAppear:(BOOL)animated {
+//    [super viewWillAppear:animated];
+//    
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"receiveMessage" object:self];
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [RCIM sharedRCIM].receiveMessageDelegate = self;
     
     [self setDisplayConversationTypes:@[@(ConversationType_PRIVATE), // 单聊
                                         @(ConversationType_DISCUSSION), // 讨论组
@@ -32,12 +31,6 @@
                                         @(ConversationType_CHATROOM) // 聊天室
                                         ]];
     
-}
-
-// 接收消息回调
-- (void)onRCIMReceiveMessage:(RCMessage *)message left:(int)left {
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"receiveMessage" object:self];
 }
 
 - (void)onSelectedTableRow:(RCConversationModelType)conversationModelType conversationModel:(RCConversationModel *)model atIndexPath:(NSIndexPath *)indexPath {
