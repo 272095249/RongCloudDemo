@@ -259,12 +259,10 @@
 				3BCEA1D421AE7CA30029F608 /* Login */,
 				3B5DA8A721AE3FE9009148FE /* Contacts */,
 				3BB72B0B21AE329B005FA5F0 /* Conversation */,
-				3B5DA8A421AE3FE9009148FE /* Discussion */,
 				3B5DA8A121AE3FE9009148FE /* Group */,
 				3BCEA1EC21B0E7040029F608 /* User */,
 				3B5DA88C21AE3F9C009148FE /* Libraries */,
 				3B5DA8B221AE425D009148FE /* Service */,
-				3B1A7EF221ACEC63000B06D4 /* Category */,
 				3B1A7E6A21ACDEFF000B06D4 /* Main.storyboard */,
 				3B1A7E6D21ACDF00000B06D4 /* Assets.xcassets */,
 				3B1A7E6F21ACDF00000B06D4 /* LaunchScreen.storyboard */,
@@ -326,13 +324,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3B1A7EF221ACEC63000B06D4 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
 		3B5DA88C21AE3F9C009148FE /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,13 +365,6 @@
 				3B5DA8A321AE3FE9009148FE /* SHGroupListViewController.m */,
 			);
 			path = Group;
-			sourceTree = "<group>";
-		};
-		3B5DA8A421AE3FE9009148FE /* Discussion */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Discussion;
 			sourceTree = "<group>";
 		};
 		3B5DA8A721AE3FE9009148FE /* Contacts */ = {

@@ -53,7 +53,6 @@ static NSString *loginCellID = @"LoginCellID";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
     return [[UserService share] contacts].count;
 }
 
@@ -70,7 +69,6 @@ static NSString *loginCellID = @"LoginCellID";
     [cell.imageView sd_setImageWithURL:[NSURL URLWithString:userInfo.portraitUri] placeholderImage:[UIImage imageNamed:@"avatar_users_72px_1108447_easyicon.net"]];
     
     return cell;
-    
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -104,7 +102,6 @@ static NSString *loginCellID = @"LoginCellID";
         //如果没有设置token有效期却提示token错误，请检查您客户端和服务器的appkey是否匹配，还有检查您获取token的流程。
         NSLog(@"token错误");
     }];
-    
 }
 
 @end

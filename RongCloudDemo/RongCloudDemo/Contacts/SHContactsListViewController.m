@@ -35,7 +35,6 @@ static NSString *contactCellID = @"ContactCellID";
     [self.view addSubview:self.tableView];
     
     [self.tableView registerClass:[ContactCell class] forCellReuseIdentifier:contactCellID];
-    
 }
 
 #pragma mark - Table view data source
@@ -44,7 +43,6 @@ static NSString *contactCellID = @"ContactCellID";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
     return [[UserService share] contacts].count;
 }
 
@@ -61,7 +59,6 @@ static NSString *contactCellID = @"ContactCellID";
     [cell.headerImageView sd_setImageWithURL:[NSURL URLWithString:userInfo.portraitUri] placeholderImage:[UIImage imageNamed:@"avatar_users_72px_1108447_easyicon.net"]];
     
     return cell;
-    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -72,7 +69,12 @@ static NSString *contactCellID = @"ContactCellID";
     
     RCUserInfo *userInfo = [[UserService share] contacts][indexPath.row];
     
-    // 点击自己时需要处理
+    if ([userInfo.userId isEqualToString:[RCIM sharedRCIM].currentUserInfo.userId]) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"不能和自己聊天" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+        [alertView show];
+        return;
+    }
+    
     SHConversationViewController *chatVC = [[SHConversationViewController alloc] init];
     chatVC.conversationType = ConversationType_PRIVATE;
     chatVC.targetId = userInfo.userId;

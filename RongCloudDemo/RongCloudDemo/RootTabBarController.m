@@ -51,7 +51,6 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         
         NSInteger unreadMsgCount = (NSInteger)[[RCIMClient sharedRCIMClient] getUnreadCount:@[@(ConversationType_PRIVATE),@(ConversationType_GROUP)]];
-        
         UINavigationController  *chatNav = self.viewControllers[0];
         if (unreadMsgCount == 0) {
             chatNav.tabBarItem.badgeValue = nil;
