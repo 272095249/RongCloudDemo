@@ -8,6 +8,8 @@ target 'RongCloudDemo' do
 
 platform :ios, '7.0'
 pod 'SDWebImage', '~> 4.0'
+pod 'RongCloudIM/IMLib', '~> 2.9.8'
+pod 'RongCloudIM/IMKit', '~> 2.9.8'  
 
   # Pods for RongCloudDemo
 

@@ -1,18 +1,25 @@
 PODS:
-  - SDWebImage (4.4.2):
-    - SDWebImage/Core (= 4.4.2)
-  - SDWebImage/Core (4.4.2)
+  - RongCloudIM/IMKit (2.9.8):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMLib (2.9.8)
+  - SDWebImage (4.4.3):
+    - SDWebImage/Core (= 4.4.3)
+  - SDWebImage/Core (4.4.3)
 
 DEPENDENCIES:
+  - RongCloudIM/IMKit (~> 2.9.8)
+  - RongCloudIM/IMLib (~> 2.9.8)
   - SDWebImage (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - RongCloudIM
     - SDWebImage
 
 SPEC CHECKSUMS:
-  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  RongCloudIM: dcfa8c4fe11e992c0d187f7dda71f2ce5bfae4d1
+  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
 
-PODFILE CHECKSUM: c10b411c43e8f2d0cc1234d66997a6f6ec5e246f
+PODFILE CHECKSUM: de9aea37f6a2149a297599079aad4e946d261f33
 
 COCOAPODS: 1.5.3

@@ -25,7 +25,7 @@
     
     NSArray *controllers = @[@"SHConversationListViewController", @"SHContactsListViewController", @"SHGroupListViewController", @"UserViewController"];
     NSArray *titles = @[@"消息", @"联系人", @"群组/聊天室", @"个人"];
-    NSArray *images = @[@"消息", @"联系人", @"群", @"个人中心"];
+    NSArray *images = @[@"消息", @"联系人", @"群组", @"个人中心"];
     NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:controllers.count];
     
     for (int i = 0; i < controllers.count; i ++) {

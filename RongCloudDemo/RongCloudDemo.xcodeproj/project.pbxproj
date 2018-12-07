@@ -7,464 +7,328 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12C5F6E65B0EB5D59AC39077 /* libPods-RongCloudDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CBC07B7D6892495B234003 /* libPods-RongCloudDemoTests.a */; };
-		26144630DA5A57FC0FFF670E /* libPods-RongCloudDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B452F8E744366EDF67926D0 /* libPods-RongCloudDemo.a */; };
-		3B1A7E6621ACDEFF000B06D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A7E6521ACDEFF000B06D4 /* AppDelegate.m */; };
-		3B1A7E6C21ACDEFF000B06D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A7E6A21ACDEFF000B06D4 /* Main.storyboard */; };
-		3B1A7E6E21ACDF00000B06D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A7E6D21ACDF00000B06D4 /* Assets.xcassets */; };
-		3B1A7E7121ACDF00000B06D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A7E6F21ACDF00000B06D4 /* LaunchScreen.storyboard */; };
-		3B1A7E7421ACDF00000B06D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A7E7321ACDF00000B06D4 /* main.m */; };
-		3B1A7E7E21ACDF01000B06D4 /* RongCloudDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A7E7D21ACDF01000B06D4 /* RongCloudDemoTests.m */; };
-		3B1A7E8921ACDF01000B06D4 /* RongCloudDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A7E8821ACDF01000B06D4 /* RongCloudDemoUITests.m */; };
-		3B1A7E9A21ACE063000B06D4 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7E9921ACE063000B06D4 /* AssetsLibrary.framework */; };
-		3B1A7E9C21ACE06E000B06D4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7E9B21ACE06E000B06D4 /* AudioToolbox.framework */; };
-		3B1A7E9E21ACE073000B06D4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7E9D21ACE073000B06D4 /* AVFoundation.framework */; };
-		3B1A7EA021ACE079000B06D4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7E9F21ACE079000B06D4 /* CFNetwork.framework */; };
-		3B1A7EA221ACE084000B06D4 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EA121ACE084000B06D4 /* CoreAudio.framework */; };
-		3B1A7EA421ACE08D000B06D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EA321ACE08D000B06D4 /* CoreGraphics.framework */; };
-		3B1A7EA621ACE093000B06D4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EA521ACE093000B06D4 /* CoreLocation.framework */; };
-		3B1A7EA821ACE099000B06D4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EA721ACE099000B06D4 /* CoreMedia.framework */; };
-		3B1A7EAA21ACE09F000B06D4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EA921ACE09F000B06D4 /* CoreTelephony.framework */; };
-		3B1A7EAC21ACE0A5000B06D4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EAB21ACE0A5000B06D4 /* CoreVideo.framework */; };
-		3B1A7EAE21ACE0AC000B06D4 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EAD21ACE0AC000B06D4 /* ImageIO.framework */; };
-		3B1A7EB021ACE0B7000B06D4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EAF21ACE0B7000B06D4 /* libc++.tbd */; };
-		3B1A7EB221ACE0C2000B06D4 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EB121ACE0C2000B06D4 /* libc++abi.tbd */; };
-		3B1A7EB421ACE0C9000B06D4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EB321ACE0C9000B06D4 /* libsqlite3.tbd */; };
-		3B1A7EB621ACE104000B06D4 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EB521ACE104000B06D4 /* libxml2.tbd */; };
-		3B1A7EB821ACE10C000B06D4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EB721ACE10C000B06D4 /* libz.tbd */; };
-		3B1A7EBA21ACE112000B06D4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EB921ACE112000B06D4 /* MapKit.framework */; };
-		3B1A7EBC21ACE118000B06D4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EBB21ACE118000B06D4 /* OpenGLES.framework */; };
-		3B1A7EBE21ACE11D000B06D4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EBD21ACE11D000B06D4 /* QuartzCore.framework */; };
-		3B1A7EC021ACE122000B06D4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EBF21ACE122000B06D4 /* SystemConfiguration.framework */; };
-		3B1A7EC221ACE127000B06D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EC121ACE127000B06D4 /* UIKit.framework */; };
-		3B1A7EC421ACE12D000B06D4 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EC321ACE12D000B06D4 /* Photos.framework */; };
-		3B1A7EC621ACE132000B06D4 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A7EC521ACE132000B06D4 /* SafariServices.framework */; };
-		3B5DA89921AE3F9C009148FE /* RongIMLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5DA88E21AE3F9C009148FE /* RongIMLib.framework */; };
-		3B5DA89A21AE3F9C009148FE /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5DA88F21AE3F9C009148FE /* libopencore-amrnb.a */; };
-		3B5DA89B21AE3F9C009148FE /* RCConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B5DA89021AE3F9C009148FE /* RCConfig.plist */; };
-		3B5DA89C21AE3F9C009148FE /* RCColor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B5DA89221AE3F9C009148FE /* RCColor.plist */; };
-		3B5DA89D21AE3F9C009148FE /* RongCloudKit.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B5DA89321AE3F9C009148FE /* RongCloudKit.strings */; };
-		3B5DA89E21AE3F9C009148FE /* RongIMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5DA89621AE3F9C009148FE /* RongIMKit.framework */; };
-		3B5DA89F21AE3F9C009148FE /* Emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B5DA89721AE3F9C009148FE /* Emoji.plist */; };
-		3B5DA8A021AE3F9C009148FE /* RongCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B5DA89821AE3F9C009148FE /* RongCloud.bundle */; };
-		3B5DA8AE21AE3FE9009148FE /* SHGroupListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DA8A321AE3FE9009148FE /* SHGroupListViewController.m */; };
-		3B5DA8B021AE3FE9009148FE /* SHContactsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DA8A821AE3FE9009148FE /* SHContactsListViewController.m */; };
-		3B5DA8B121AE3FE9009148FE /* ContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DA8AB21AE3FE9009148FE /* ContactCell.m */; };
-		3B5DA8B821AE43B0009148FE /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DA8B721AE43AF009148FE /* UserService.m */; };
-		3BB72B0821AE3268005FA5F0 /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB72B0721AE3268005FA5F0 /* RootTabBarController.m */; };
-		3BB72B1121AE329B005FA5F0 /* SHConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB72B0C21AE329B005FA5F0 /* SHConversationViewController.m */; };
-		3BB72B1221AE329B005FA5F0 /* SHConversationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB72B0D21AE329B005FA5F0 /* SHConversationListViewController.m */; };
-		3BCEA1D121AE4D610029F608 /* avatar_users_72px_1108447_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEA1D021AE4D600029F608 /* avatar_users_72px_1108447_easyicon.net.png */; };
-		3BCEA1D321AE69270029F608 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA1D221AE69270029F608 /* libSDWebImage.a */; };
-		3BCEA1D721AE7CB40029F608 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA1D621AE7CB40029F608 /* LoginViewController.m */; };
-		3BCEA1DB21AEA2140029F608 /* SHMessageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA1DA21AEA2140029F608 /* SHMessageContent.m */; };
-		3BCEA1DF21AF80920029F608 /* SHWebMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA1DE21AF80920029F608 /* SHWebMessageCell.m */; };
-		3BCEA1E121AF8CEE0029F608 /* urlPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEA1E021AF8CEE0029F608 /* urlPic.png */; };
-		3BCEA1E321AF8F3B0029F608 /* Swift.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEA1E221AF8F3B0029F608 /* Swift.png */; };
-		3BCEA1EF21B0E7330029F608 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA1EE21B0E7330029F608 /* UserViewController.m */; };
-		3BCEA1F321B0E8230029F608 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA1F221B0E8230029F608 /* HeaderView.m */; };
-		3BCEA23721B131A30029F608 /* SHExpressionTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA23621B131A30029F608 /* SHExpressionTab.m */; };
-		5C4BEB6A57B16FF05C8D1DA6 /* libPods-RongCloudDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEC41A607DFD8E12EF57BE7 /* libPods-RongCloudDemoUITests.a */; };
+		3BA6886221BA5A1700854030 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA6886121BA5A1700854030 /* AppDelegate.m */; };
+		3BA6886821BA5A1700854030 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA6886621BA5A1700854030 /* Main.storyboard */; };
+		3BA6886A21BA5A1800854030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA6886921BA5A1800854030 /* Assets.xcassets */; };
+		3BA6886D21BA5A1800854030 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA6886B21BA5A1800854030 /* LaunchScreen.storyboard */; };
+		3BA6887021BA5A1800854030 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA6886F21BA5A1800854030 /* main.m */; };
+		3BA6887A21BA5A1800854030 /* RongCloudDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA6887921BA5A1800854030 /* RongCloudDemoTests.m */; };
+		3BA6888521BA5A1800854030 /* RongCloudDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA6888421BA5A1800854030 /* RongCloudDemoUITests.m */; };
+		3BA688C621BA5BDC00854030 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA6889321BA5BDB00854030 /* LoginViewController.m */; };
+		3BA688C721BA5BDC00854030 /* SHConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA6889621BA5BDB00854030 /* SHConversationViewController.m */; };
+		3BA688C821BA5BDC00854030 /* SHConversationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA6889721BA5BDB00854030 /* SHConversationListViewController.m */; };
+		3BA688C921BA5BDC00854030 /* SHMessageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA6889A21BA5BDB00854030 /* SHMessageContent.m */; };
+		3BA688CA21BA5BDC00854030 /* SHWebMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA6889D21BA5BDB00854030 /* SHWebMessageCell.m */; };
+		3BA688CB21BA5BDC00854030 /* SHGroupListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA688A221BA5BDB00854030 /* SHGroupListViewController.m */; };
+		3BA688CF21BA5BDC00854030 /* urlPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BA688A821BA5BDB00854030 /* urlPic.png */; };
+		3BA688D021BA5BDC00854030 /* avatar_users_72px_1108447_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BA688A921BA5BDB00854030 /* avatar_users_72px_1108447_easyicon.net.png */; };
+		3BA688D621BA5BDC00854030 /* Swift.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BA688B221BA5BDB00854030 /* Swift.png */; };
+		3BA688D721BA5BDC00854030 /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA688B321BA5BDB00854030 /* RootTabBarController.m */; };
+		3BA688D821BA5BDC00854030 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA688B721BA5BDB00854030 /* HeaderView.m */; };
+		3BA688D921BA5BDC00854030 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA688B921BA5BDB00854030 /* UserViewController.m */; };
+		3BA688DA21BA5BDC00854030 /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA688BB21BA5BDB00854030 /* UserService.m */; };
+		3BA688DB21BA5BDC00854030 /* SHExpressionTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA688BC21BA5BDB00854030 /* SHExpressionTab.m */; };
+		3BA688DC21BA5BDC00854030 /* SHContactsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA688C021BA5BDB00854030 /* SHContactsListViewController.m */; };
+		3BA688DD21BA5BDC00854030 /* ContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA688C221BA5BDB00854030 /* ContactCell.m */; };
+		3BA688DF21BA5C4300854030 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA688DE21BA5C4300854030 /* libSDWebImage.a */; };
+		AC35CE09A7AD61F9F4209E6E /* libPods-RongCloudDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05243C18222CE78D25349671 /* libPods-RongCloudDemo.a */; };
+		AD663A830ED6269E87F1758C /* libPods-RongCloudDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA38EE95A59BCA953C10F655 /* libPods-RongCloudDemoTests.a */; };
+		CC1C182C3F6B213C7D6D8165 /* libPods-RongCloudDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7D6705EB3F5944F7DEBD4F /* libPods-RongCloudDemoUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3B1A7E7A21ACDF01000B06D4 /* PBXContainerItemProxy */ = {
+		3BA6887621BA5A1800854030 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3B1A7E5921ACDEFE000B06D4 /* Project object */;
+			containerPortal = 3BA6885521BA5A1700854030 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3B1A7E6021ACDEFF000B06D4;
+			remoteGlobalIDString = 3BA6885C21BA5A1700854030;
 			remoteInfo = RongCloudDemo;
 		};
-		3B1A7E8521ACDF01000B06D4 /* PBXContainerItemProxy */ = {
+		3BA6888121BA5A1800854030 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3B1A7E5921ACDEFE000B06D4 /* Project object */;
+			containerPortal = 3BA6885521BA5A1700854030 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3B1A7E6021ACDEFF000B06D4;
+			remoteGlobalIDString = 3BA6885C21BA5A1700854030;
 			remoteInfo = RongCloudDemo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04CBC07B7D6892495B234003 /* libPods-RongCloudDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RongCloudDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A3CC42765C15E2B5B411594 /* Pods-RongCloudDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoTests/Pods-RongCloudDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		2A945B34B184CCB0A93C66AE /* Pods-RongCloudDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo.release.xcconfig"; sourceTree = "<group>"; };
-		3B1A7E6121ACDEFF000B06D4 /* RongCloudDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RongCloudDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B1A7E6421ACDEFF000B06D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3B1A7E6521ACDEFF000B06D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3B1A7E6B21ACDEFF000B06D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3B1A7E6D21ACDF00000B06D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3B1A7E7021ACDF00000B06D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3B1A7E7221ACDF00000B06D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B1A7E7321ACDF00000B06D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3B1A7E7921ACDF01000B06D4 /* RongCloudDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RongCloudDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B1A7E7D21ACDF01000B06D4 /* RongCloudDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RongCloudDemoTests.m; sourceTree = "<group>"; };
-		3B1A7E7F21ACDF01000B06D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B1A7E8421ACDF01000B06D4 /* RongCloudDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RongCloudDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B1A7E8821ACDF01000B06D4 /* RongCloudDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RongCloudDemoUITests.m; sourceTree = "<group>"; };
-		3B1A7E8A21ACDF01000B06D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B1A7E9921ACE063000B06D4 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		3B1A7E9B21ACE06E000B06D4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		3B1A7E9D21ACE073000B06D4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		3B1A7E9F21ACE079000B06D4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		3B1A7EA121ACE084000B06D4 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		3B1A7EA321ACE08D000B06D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3B1A7EA521ACE093000B06D4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		3B1A7EA721ACE099000B06D4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		3B1A7EA921ACE09F000B06D4 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		3B1A7EAB21ACE0A5000B06D4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		3B1A7EAD21ACE0AC000B06D4 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		3B1A7EAF21ACE0B7000B06D4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		3B1A7EB121ACE0C2000B06D4 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
-		3B1A7EB321ACE0C9000B06D4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		3B1A7EB521ACE104000B06D4 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
-		3B1A7EB721ACE10C000B06D4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		3B1A7EB921ACE112000B06D4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		3B1A7EBB21ACE118000B06D4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		3B1A7EBD21ACE11D000B06D4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		3B1A7EBF21ACE122000B06D4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		3B1A7EC121ACE127000B06D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		3B1A7EC321ACE12D000B06D4 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
-		3B1A7EC521ACE132000B06D4 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
-		3B5DA88E21AE3F9C009148FE /* RongIMLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RongIMLib.framework; sourceTree = "<group>"; };
-		3B5DA88F21AE3F9C009148FE /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
-		3B5DA89021AE3F9C009148FE /* RCConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RCConfig.plist; sourceTree = "<group>"; };
-		3B5DA89221AE3F9C009148FE /* RCColor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RCColor.plist; sourceTree = "<group>"; };
-		3B5DA89421AE3F9C009148FE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/RongCloudKit.strings"; sourceTree = "<group>"; };
-		3B5DA89521AE3F9C009148FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/RongCloudKit.strings; sourceTree = "<group>"; };
-		3B5DA89621AE3F9C009148FE /* RongIMKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RongIMKit.framework; sourceTree = "<group>"; };
-		3B5DA89721AE3F9C009148FE /* Emoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Emoji.plist; sourceTree = "<group>"; };
-		3B5DA89821AE3F9C009148FE /* RongCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RongCloud.bundle; sourceTree = "<group>"; };
-		3B5DA8A221AE3FE9009148FE /* SHGroupListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHGroupListViewController.h; sourceTree = "<group>"; };
-		3B5DA8A321AE3FE9009148FE /* SHGroupListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHGroupListViewController.m; sourceTree = "<group>"; };
-		3B5DA8A821AE3FE9009148FE /* SHContactsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHContactsListViewController.m; sourceTree = "<group>"; };
-		3B5DA8AB21AE3FE9009148FE /* ContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactCell.m; sourceTree = "<group>"; };
-		3B5DA8AC21AE3FE9009148FE /* ContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactCell.h; sourceTree = "<group>"; };
-		3B5DA8AD21AE3FE9009148FE /* SHContactsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHContactsListViewController.h; sourceTree = "<group>"; };
-		3B5DA8B621AE43AF009148FE /* UserService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
-		3B5DA8B721AE43AF009148FE /* UserService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserService.m; sourceTree = "<group>"; };
-		3BB72B0621AE3268005FA5F0 /* RootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBarController.h; sourceTree = "<group>"; };
-		3BB72B0721AE3268005FA5F0 /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
-		3BB72B0C21AE329B005FA5F0 /* SHConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHConversationViewController.m; sourceTree = "<group>"; };
-		3BB72B0D21AE329B005FA5F0 /* SHConversationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHConversationListViewController.m; sourceTree = "<group>"; };
-		3BB72B0E21AE329B005FA5F0 /* SHConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHConversationViewController.h; sourceTree = "<group>"; };
-		3BB72B0F21AE329B005FA5F0 /* SHConversationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHConversationListViewController.h; sourceTree = "<group>"; };
-		3BCEA1D021AE4D600029F608 /* avatar_users_72px_1108447_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_users_72px_1108447_easyicon.net.png; sourceTree = "<group>"; };
-		3BCEA1D221AE69270029F608 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BCEA1D521AE7CB40029F608 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		3BCEA1D621AE7CB40029F608 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		3BCEA1D921AEA2140029F608 /* SHMessageContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHMessageContent.h; sourceTree = "<group>"; };
-		3BCEA1DA21AEA2140029F608 /* SHMessageContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHMessageContent.m; sourceTree = "<group>"; };
-		3BCEA1DD21AF80920029F608 /* SHWebMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHWebMessageCell.h; sourceTree = "<group>"; };
-		3BCEA1DE21AF80920029F608 /* SHWebMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHWebMessageCell.m; sourceTree = "<group>"; };
-		3BCEA1E021AF8CEE0029F608 /* urlPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = urlPic.png; sourceTree = "<group>"; };
-		3BCEA1E221AF8F3B0029F608 /* Swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Swift.png; sourceTree = "<group>"; };
-		3BCEA1ED21B0E7330029F608 /* UserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
-		3BCEA1EE21B0E7330029F608 /* UserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
-		3BCEA1F121B0E8230029F608 /* HeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
-		3BCEA1F221B0E8230029F608 /* HeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
-		3BCEA23521B131A30029F608 /* SHExpressionTab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHExpressionTab.h; sourceTree = "<group>"; };
-		3BCEA23621B131A30029F608 /* SHExpressionTab.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHExpressionTab.m; sourceTree = "<group>"; };
-		5EF2A8743AF76573B6D2C638 /* Pods-RongCloudDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoTests/Pods-RongCloudDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7CE38D9F1CC4A821E2C2112C /* Pods-RongCloudDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		8586DDC8AB439F48653F578A /* Pods-RongCloudDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoUITests/Pods-RongCloudDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		8B452F8E744366EDF67926D0 /* libPods-RongCloudDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RongCloudDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		95C3AC61B9B2688B762031D4 /* Pods-RongCloudDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoUITests/Pods-RongCloudDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		FFEC41A607DFD8E12EF57BE7 /* libPods-RongCloudDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RongCloudDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05243C18222CE78D25349671 /* libPods-RongCloudDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RongCloudDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA6885D21BA5A1700854030 /* RongCloudDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RongCloudDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA6886021BA5A1700854030 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3BA6886121BA5A1700854030 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3BA6886721BA5A1700854030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BA6886921BA5A1800854030 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BA6886C21BA5A1800854030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BA6886E21BA5A1800854030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BA6886F21BA5A1800854030 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3BA6887521BA5A1800854030 /* RongCloudDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RongCloudDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA6887921BA5A1800854030 /* RongCloudDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RongCloudDemoTests.m; sourceTree = "<group>"; };
+		3BA6887B21BA5A1800854030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BA6888021BA5A1800854030 /* RongCloudDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RongCloudDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA6888421BA5A1800854030 /* RongCloudDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RongCloudDemoUITests.m; sourceTree = "<group>"; };
+		3BA6888621BA5A1800854030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BA6889321BA5BDB00854030 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		3BA6889421BA5BDB00854030 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		3BA6889621BA5BDB00854030 /* SHConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHConversationViewController.m; sourceTree = "<group>"; };
+		3BA6889721BA5BDB00854030 /* SHConversationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHConversationListViewController.m; sourceTree = "<group>"; };
+		3BA6889821BA5BDB00854030 /* SHConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHConversationViewController.h; sourceTree = "<group>"; };
+		3BA6889A21BA5BDB00854030 /* SHMessageContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHMessageContent.m; sourceTree = "<group>"; };
+		3BA6889B21BA5BDB00854030 /* SHMessageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHMessageContent.h; sourceTree = "<group>"; };
+		3BA6889D21BA5BDB00854030 /* SHWebMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHWebMessageCell.m; sourceTree = "<group>"; };
+		3BA6889E21BA5BDB00854030 /* SHWebMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHWebMessageCell.h; sourceTree = "<group>"; };
+		3BA6889F21BA5BDB00854030 /* SHConversationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHConversationListViewController.h; sourceTree = "<group>"; };
+		3BA688A121BA5BDB00854030 /* SHGroupListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHGroupListViewController.h; sourceTree = "<group>"; };
+		3BA688A221BA5BDB00854030 /* SHGroupListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHGroupListViewController.m; sourceTree = "<group>"; };
+		3BA688A821BA5BDB00854030 /* urlPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = urlPic.png; sourceTree = "<group>"; };
+		3BA688A921BA5BDB00854030 /* avatar_users_72px_1108447_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_users_72px_1108447_easyicon.net.png; sourceTree = "<group>"; };
+		3BA688B221BA5BDB00854030 /* Swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Swift.png; sourceTree = "<group>"; };
+		3BA688B321BA5BDB00854030 /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
+		3BA688B521BA5BDB00854030 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		3BA688B721BA5BDB00854030 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		3BA688B821BA5BDB00854030 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		3BA688B921BA5BDB00854030 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		3BA688BB21BA5BDB00854030 /* UserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserService.m; sourceTree = "<group>"; };
+		3BA688BC21BA5BDB00854030 /* SHExpressionTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHExpressionTab.m; sourceTree = "<group>"; };
+		3BA688BD21BA5BDB00854030 /* SHExpressionTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHExpressionTab.h; sourceTree = "<group>"; };
+		3BA688BE21BA5BDB00854030 /* UserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
+		3BA688C021BA5BDB00854030 /* SHContactsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHContactsListViewController.m; sourceTree = "<group>"; };
+		3BA688C221BA5BDB00854030 /* ContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactCell.m; sourceTree = "<group>"; };
+		3BA688C321BA5BDB00854030 /* ContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactCell.h; sourceTree = "<group>"; };
+		3BA688C421BA5BDB00854030 /* SHContactsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHContactsListViewController.h; sourceTree = "<group>"; };
+		3BA688C521BA5BDB00854030 /* RootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBarController.h; sourceTree = "<group>"; };
+		3BA688DE21BA5C4300854030 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		61D2181E95025DCEC2BB756E /* Pods-RongCloudDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoUITests/Pods-RongCloudDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		77E5BD714C218332FD71E759 /* Pods-RongCloudDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoUITests/Pods-RongCloudDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA38EE95A59BCA953C10F655 /* libPods-RongCloudDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RongCloudDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB3C891B6BD0937ACEBC578B /* Pods-RongCloudDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D06A15D40662D7D437D37535 /* Pods-RongCloudDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E136878BACEEE691F24D11F2 /* Pods-RongCloudDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoTests/Pods-RongCloudDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB7D6705EB3F5944F7DEBD4F /* libPods-RongCloudDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RongCloudDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2025791764707E207988B0A /* Pods-RongCloudDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoTests/Pods-RongCloudDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3B1A7E5E21ACDEFF000B06D4 /* Frameworks */ = {
+		3BA6885A21BA5A1700854030 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BCEA1D321AE69270029F608 /* libSDWebImage.a in Frameworks */,
-				3B1A7EC621ACE132000B06D4 /* SafariServices.framework in Frameworks */,
-				3B1A7EC421ACE12D000B06D4 /* Photos.framework in Frameworks */,
-				3B1A7EC221ACE127000B06D4 /* UIKit.framework in Frameworks */,
-				3B1A7EC021ACE122000B06D4 /* SystemConfiguration.framework in Frameworks */,
-				3B1A7EBE21ACE11D000B06D4 /* QuartzCore.framework in Frameworks */,
-				3B1A7EBC21ACE118000B06D4 /* OpenGLES.framework in Frameworks */,
-				3B1A7EBA21ACE112000B06D4 /* MapKit.framework in Frameworks */,
-				3B1A7EB821ACE10C000B06D4 /* libz.tbd in Frameworks */,
-				3B1A7EB621ACE104000B06D4 /* libxml2.tbd in Frameworks */,
-				3B1A7EB421ACE0C9000B06D4 /* libsqlite3.tbd in Frameworks */,
-				3B5DA89921AE3F9C009148FE /* RongIMLib.framework in Frameworks */,
-				3B5DA89E21AE3F9C009148FE /* RongIMKit.framework in Frameworks */,
-				3B1A7EB221ACE0C2000B06D4 /* libc++abi.tbd in Frameworks */,
-				3B1A7EB021ACE0B7000B06D4 /* libc++.tbd in Frameworks */,
-				3B1A7EAE21ACE0AC000B06D4 /* ImageIO.framework in Frameworks */,
-				3B1A7EAC21ACE0A5000B06D4 /* CoreVideo.framework in Frameworks */,
-				3B1A7EAA21ACE09F000B06D4 /* CoreTelephony.framework in Frameworks */,
-				3B1A7EA821ACE099000B06D4 /* CoreMedia.framework in Frameworks */,
-				3B1A7EA621ACE093000B06D4 /* CoreLocation.framework in Frameworks */,
-				3B5DA89A21AE3F9C009148FE /* libopencore-amrnb.a in Frameworks */,
-				3B1A7EA421ACE08D000B06D4 /* CoreGraphics.framework in Frameworks */,
-				3B1A7EA221ACE084000B06D4 /* CoreAudio.framework in Frameworks */,
-				3B1A7EA021ACE079000B06D4 /* CFNetwork.framework in Frameworks */,
-				3B1A7E9E21ACE073000B06D4 /* AVFoundation.framework in Frameworks */,
-				3B1A7E9C21ACE06E000B06D4 /* AudioToolbox.framework in Frameworks */,
-				3B1A7E9A21ACE063000B06D4 /* AssetsLibrary.framework in Frameworks */,
-				26144630DA5A57FC0FFF670E /* libPods-RongCloudDemo.a in Frameworks */,
+				3BA688DF21BA5C4300854030 /* libSDWebImage.a in Frameworks */,
+				AC35CE09A7AD61F9F4209E6E /* libPods-RongCloudDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B1A7E7621ACDF01000B06D4 /* Frameworks */ = {
+		3BA6887221BA5A1800854030 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C5F6E65B0EB5D59AC39077 /* libPods-RongCloudDemoTests.a in Frameworks */,
+				AD663A830ED6269E87F1758C /* libPods-RongCloudDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B1A7E8121ACDF01000B06D4 /* Frameworks */ = {
+		3BA6887D21BA5A1800854030 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C4BEB6A57B16FF05C8D1DA6 /* libPods-RongCloudDemoUITests.a in Frameworks */,
+				CC1C182C3F6B213C7D6D8165 /* libPods-RongCloudDemoUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B1A7E5821ACDEFE000B06D4 = {
+		10EF6FCA6F45BD1FBE135827 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3B1A7E6321ACDEFF000B06D4 /* RongCloudDemo */,
-				3B1A7E7C21ACDF01000B06D4 /* RongCloudDemoTests */,
-				3B1A7E8721ACDF01000B06D4 /* RongCloudDemoUITests */,
-				3B1A7E6221ACDEFF000B06D4 /* Products */,
-				3B1A7E9821ACE062000B06D4 /* Frameworks */,
-				E58B714D45DB0C212E9E34C6 /* Pods */,
-			);
-			sourceTree = "<group>";
-		};
-		3B1A7E6221ACDEFF000B06D4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3B1A7E6121ACDEFF000B06D4 /* RongCloudDemo.app */,
-				3B1A7E7921ACDF01000B06D4 /* RongCloudDemoTests.xctest */,
-				3B1A7E8421ACDF01000B06D4 /* RongCloudDemoUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3B1A7E6321ACDEFF000B06D4 /* RongCloudDemo */ = {
-			isa = PBXGroup;
-			children = (
-				3B1A7E6421ACDEFF000B06D4 /* AppDelegate.h */,
-				3B1A7E6521ACDEFF000B06D4 /* AppDelegate.m */,
-				3BB72B0621AE3268005FA5F0 /* RootTabBarController.h */,
-				3BB72B0721AE3268005FA5F0 /* RootTabBarController.m */,
-				3BCEA1D421AE7CA30029F608 /* Login */,
-				3B5DA8A721AE3FE9009148FE /* Contacts */,
-				3BB72B0B21AE329B005FA5F0 /* Conversation */,
-				3B5DA8A121AE3FE9009148FE /* Group */,
-				3BCEA1EC21B0E7040029F608 /* User */,
-				3B5DA88C21AE3F9C009148FE /* Libraries */,
-				3B5DA8B221AE425D009148FE /* Service */,
-				3B1A7E6A21ACDEFF000B06D4 /* Main.storyboard */,
-				3B1A7E6D21ACDF00000B06D4 /* Assets.xcassets */,
-				3B1A7E6F21ACDF00000B06D4 /* LaunchScreen.storyboard */,
-				3B1A7E7221ACDF00000B06D4 /* Info.plist */,
-				3B1A7E7321ACDF00000B06D4 /* main.m */,
-			);
-			path = RongCloudDemo;
-			sourceTree = "<group>";
-		};
-		3B1A7E7C21ACDF01000B06D4 /* RongCloudDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				3B1A7E7D21ACDF01000B06D4 /* RongCloudDemoTests.m */,
-				3B1A7E7F21ACDF01000B06D4 /* Info.plist */,
-			);
-			path = RongCloudDemoTests;
-			sourceTree = "<group>";
-		};
-		3B1A7E8721ACDF01000B06D4 /* RongCloudDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3B1A7E8821ACDF01000B06D4 /* RongCloudDemoUITests.m */,
-				3B1A7E8A21ACDF01000B06D4 /* Info.plist */,
-			);
-			path = RongCloudDemoUITests;
-			sourceTree = "<group>";
-		};
-		3B1A7E9821ACE062000B06D4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3BCEA1D221AE69270029F608 /* libSDWebImage.a */,
-				3B1A7EC521ACE132000B06D4 /* SafariServices.framework */,
-				3B1A7EC321ACE12D000B06D4 /* Photos.framework */,
-				3B1A7EC121ACE127000B06D4 /* UIKit.framework */,
-				3B1A7EBF21ACE122000B06D4 /* SystemConfiguration.framework */,
-				3B1A7EBD21ACE11D000B06D4 /* QuartzCore.framework */,
-				3B1A7EBB21ACE118000B06D4 /* OpenGLES.framework */,
-				3B1A7EB921ACE112000B06D4 /* MapKit.framework */,
-				3B1A7EB721ACE10C000B06D4 /* libz.tbd */,
-				3B1A7EB521ACE104000B06D4 /* libxml2.tbd */,
-				3B1A7EB321ACE0C9000B06D4 /* libsqlite3.tbd */,
-				3B1A7EB121ACE0C2000B06D4 /* libc++abi.tbd */,
-				3B1A7EAF21ACE0B7000B06D4 /* libc++.tbd */,
-				3B1A7EAD21ACE0AC000B06D4 /* ImageIO.framework */,
-				3B1A7EAB21ACE0A5000B06D4 /* CoreVideo.framework */,
-				3B1A7EA921ACE09F000B06D4 /* CoreTelephony.framework */,
-				3B1A7EA721ACE099000B06D4 /* CoreMedia.framework */,
-				3B1A7EA521ACE093000B06D4 /* CoreLocation.framework */,
-				3B1A7EA321ACE08D000B06D4 /* CoreGraphics.framework */,
-				3B1A7EA121ACE084000B06D4 /* CoreAudio.framework */,
-				3B1A7E9F21ACE079000B06D4 /* CFNetwork.framework */,
-				3B1A7E9D21ACE073000B06D4 /* AVFoundation.framework */,
-				3B1A7E9B21ACE06E000B06D4 /* AudioToolbox.framework */,
-				3B1A7E9921ACE063000B06D4 /* AssetsLibrary.framework */,
-				8B452F8E744366EDF67926D0 /* libPods-RongCloudDemo.a */,
-				04CBC07B7D6892495B234003 /* libPods-RongCloudDemoTests.a */,
-				FFEC41A607DFD8E12EF57BE7 /* libPods-RongCloudDemoUITests.a */,
+				3BA688DE21BA5C4300854030 /* libSDWebImage.a */,
+				05243C18222CE78D25349671 /* libPods-RongCloudDemo.a */,
+				BA38EE95A59BCA953C10F655 /* libPods-RongCloudDemoTests.a */,
+				EB7D6705EB3F5944F7DEBD4F /* libPods-RongCloudDemoUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3B5DA88C21AE3F9C009148FE /* Libraries */ = {
+		3BA6885421BA5A1700854030 = {
 			isa = PBXGroup;
 			children = (
-				3BCEA1E221AF8F3B0029F608 /* Swift.png */,
-				3BCEA1E021AF8CEE0029F608 /* urlPic.png */,
-				3BCEA1D021AE4D600029F608 /* avatar_users_72px_1108447_easyicon.net.png */,
-				3B5DA88D21AE3F9C009148FE /* IMLib */,
-				3B5DA89121AE3F9C009148FE /* IMKit */,
+				3BA6885F21BA5A1700854030 /* RongCloudDemo */,
+				3BA6887821BA5A1800854030 /* RongCloudDemoTests */,
+				3BA6888321BA5A1800854030 /* RongCloudDemoUITests */,
+				3BA6885E21BA5A1700854030 /* Products */,
+				E26616B349A0B7A4EE34779F /* Pods */,
+				10EF6FCA6F45BD1FBE135827 /* Frameworks */,
 			);
-			path = Libraries;
 			sourceTree = "<group>";
 		};
-		3B5DA88D21AE3F9C009148FE /* IMLib */ = {
+		3BA6885E21BA5A1700854030 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B5DA88E21AE3F9C009148FE /* RongIMLib.framework */,
-				3B5DA88F21AE3F9C009148FE /* libopencore-amrnb.a */,
-				3B5DA89021AE3F9C009148FE /* RCConfig.plist */,
+				3BA6885D21BA5A1700854030 /* RongCloudDemo.app */,
+				3BA6887521BA5A1800854030 /* RongCloudDemoTests.xctest */,
+				3BA6888021BA5A1800854030 /* RongCloudDemoUITests.xctest */,
 			);
-			path = IMLib;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		3B5DA89121AE3F9C009148FE /* IMKit */ = {
+		3BA6885F21BA5A1700854030 /* RongCloudDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3B5DA89221AE3F9C009148FE /* RCColor.plist */,
-				3B5DA89321AE3F9C009148FE /* RongCloudKit.strings */,
-				3B5DA89621AE3F9C009148FE /* RongIMKit.framework */,
-				3B5DA89721AE3F9C009148FE /* Emoji.plist */,
-				3B5DA89821AE3F9C009148FE /* RongCloud.bundle */,
+				3BA6886021BA5A1700854030 /* AppDelegate.h */,
+				3BA6886121BA5A1700854030 /* AppDelegate.m */,
+				3BA688C521BA5BDB00854030 /* RootTabBarController.h */,
+				3BA688B321BA5BDB00854030 /* RootTabBarController.m */,
+				3BA688BF21BA5BDB00854030 /* Contacts */,
+				3BA6889521BA5BDB00854030 /* Conversation */,
+				3BA688A021BA5BDB00854030 /* Group */,
+				3BA688A321BA5BDB00854030 /* Libraries */,
+				3BA6889221BA5BDB00854030 /* Login */,
+				3BA688BA21BA5BDB00854030 /* Service */,
+				3BA688B421BA5BDB00854030 /* User */,
+				3BA6886921BA5A1800854030 /* Assets.xcassets */,
+				3BA6886621BA5A1700854030 /* Main.storyboard */,
+				3BA6886B21BA5A1800854030 /* LaunchScreen.storyboard */,
+				3BA6886E21BA5A1800854030 /* Info.plist */,
+				3BA6886F21BA5A1800854030 /* main.m */,
 			);
-			path = IMKit;
+			path = RongCloudDemo;
 			sourceTree = "<group>";
 		};
-		3B5DA8A121AE3FE9009148FE /* Group */ = {
+		3BA6887821BA5A1800854030 /* RongCloudDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				3B5DA8A221AE3FE9009148FE /* SHGroupListViewController.h */,
-				3B5DA8A321AE3FE9009148FE /* SHGroupListViewController.m */,
+				3BA6887921BA5A1800854030 /* RongCloudDemoTests.m */,
+				3BA6887B21BA5A1800854030 /* Info.plist */,
 			);
-			path = Group;
+			path = RongCloudDemoTests;
 			sourceTree = "<group>";
 		};
-		3B5DA8A721AE3FE9009148FE /* Contacts */ = {
+		3BA6888321BA5A1800854030 /* RongCloudDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3B5DA8AA21AE3FE9009148FE /* View */,
-				3B5DA8AD21AE3FE9009148FE /* SHContactsListViewController.h */,
-				3B5DA8A821AE3FE9009148FE /* SHContactsListViewController.m */,
+				3BA6888421BA5A1800854030 /* RongCloudDemoUITests.m */,
+				3BA6888621BA5A1800854030 /* Info.plist */,
 			);
-			path = Contacts;
+			path = RongCloudDemoUITests;
 			sourceTree = "<group>";
 		};
-		3B5DA8AA21AE3FE9009148FE /* View */ = {
+		3BA6889221BA5BDB00854030 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				3B5DA8AC21AE3FE9009148FE /* ContactCell.h */,
-				3B5DA8AB21AE3FE9009148FE /* ContactCell.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		3B5DA8B221AE425D009148FE /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				3B5DA8B621AE43AF009148FE /* UserService.h */,
-				3B5DA8B721AE43AF009148FE /* UserService.m */,
-				3BCEA23521B131A30029F608 /* SHExpressionTab.h */,
-				3BCEA23621B131A30029F608 /* SHExpressionTab.m */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		3BB72B0B21AE329B005FA5F0 /* Conversation */ = {
-			isa = PBXGroup;
-			children = (
-				3BCEA1DC21AF7F870029F608 /* View */,
-				3BCEA1D821AEA1F80029F608 /* Model */,
-				3BB72B0F21AE329B005FA5F0 /* SHConversationListViewController.h */,
-				3BB72B0D21AE329B005FA5F0 /* SHConversationListViewController.m */,
-				3BB72B0E21AE329B005FA5F0 /* SHConversationViewController.h */,
-				3BB72B0C21AE329B005FA5F0 /* SHConversationViewController.m */,
-			);
-			path = Conversation;
-			sourceTree = "<group>";
-		};
-		3BCEA1D421AE7CA30029F608 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				3BCEA1D521AE7CB40029F608 /* LoginViewController.h */,
-				3BCEA1D621AE7CB40029F608 /* LoginViewController.m */,
+				3BA6889421BA5BDB00854030 /* LoginViewController.h */,
+				3BA6889321BA5BDB00854030 /* LoginViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		3BCEA1D821AEA1F80029F608 /* Model */ = {
+		3BA6889521BA5BDB00854030 /* Conversation */ = {
 			isa = PBXGroup;
 			children = (
-				3BCEA1D921AEA2140029F608 /* SHMessageContent.h */,
-				3BCEA1DA21AEA2140029F608 /* SHMessageContent.m */,
+				3BA6889921BA5BDB00854030 /* Model */,
+				3BA6889C21BA5BDB00854030 /* View */,
+				3BA6889F21BA5BDB00854030 /* SHConversationListViewController.h */,
+				3BA6889721BA5BDB00854030 /* SHConversationListViewController.m */,
+				3BA6889821BA5BDB00854030 /* SHConversationViewController.h */,
+				3BA6889621BA5BDB00854030 /* SHConversationViewController.m */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		3BA6889921BA5BDB00854030 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BA6889B21BA5BDB00854030 /* SHMessageContent.h */,
+				3BA6889A21BA5BDB00854030 /* SHMessageContent.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		3BCEA1DC21AF7F870029F608 /* View */ = {
+		3BA6889C21BA5BDB00854030 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3BCEA1DD21AF80920029F608 /* SHWebMessageCell.h */,
-				3BCEA1DE21AF80920029F608 /* SHWebMessageCell.m */,
+				3BA6889E21BA5BDB00854030 /* SHWebMessageCell.h */,
+				3BA6889D21BA5BDB00854030 /* SHWebMessageCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		3BCEA1EC21B0E7040029F608 /* User */ = {
+		3BA688A021BA5BDB00854030 /* Group */ = {
 			isa = PBXGroup;
 			children = (
-				3BCEA1F021B0E7DE0029F608 /* View */,
-				3BCEA1ED21B0E7330029F608 /* UserViewController.h */,
-				3BCEA1EE21B0E7330029F608 /* UserViewController.m */,
+				3BA688A121BA5BDB00854030 /* SHGroupListViewController.h */,
+				3BA688A221BA5BDB00854030 /* SHGroupListViewController.m */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		3BA688A321BA5BDB00854030 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3BA688A821BA5BDB00854030 /* urlPic.png */,
+				3BA688A921BA5BDB00854030 /* avatar_users_72px_1108447_easyicon.net.png */,
+				3BA688B221BA5BDB00854030 /* Swift.png */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		3BA688B421BA5BDB00854030 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				3BA688B621BA5BDB00854030 /* View */,
+				3BA688B521BA5BDB00854030 /* UserViewController.h */,
+				3BA688B921BA5BDB00854030 /* UserViewController.m */,
 			);
 			path = User;
 			sourceTree = "<group>";
 		};
-		3BCEA1F021B0E7DE0029F608 /* View */ = {
+		3BA688B621BA5BDB00854030 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3BCEA1F121B0E8230029F608 /* HeaderView.h */,
-				3BCEA1F221B0E8230029F608 /* HeaderView.m */,
+				3BA688B721BA5BDB00854030 /* HeaderView.m */,
+				3BA688B821BA5BDB00854030 /* HeaderView.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		E58B714D45DB0C212E9E34C6 /* Pods */ = {
+		3BA688BA21BA5BDB00854030 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				7CE38D9F1CC4A821E2C2112C /* Pods-RongCloudDemo.debug.xcconfig */,
-				2A945B34B184CCB0A93C66AE /* Pods-RongCloudDemo.release.xcconfig */,
-				5EF2A8743AF76573B6D2C638 /* Pods-RongCloudDemoTests.debug.xcconfig */,
-				1A3CC42765C15E2B5B411594 /* Pods-RongCloudDemoTests.release.xcconfig */,
-				95C3AC61B9B2688B762031D4 /* Pods-RongCloudDemoUITests.debug.xcconfig */,
-				8586DDC8AB439F48653F578A /* Pods-RongCloudDemoUITests.release.xcconfig */,
+				3BA688BD21BA5BDB00854030 /* SHExpressionTab.h */,
+				3BA688BC21BA5BDB00854030 /* SHExpressionTab.m */,
+				3BA688BE21BA5BDB00854030 /* UserService.h */,
+				3BA688BB21BA5BDB00854030 /* UserService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3BA688BF21BA5BDB00854030 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				3BA688C121BA5BDB00854030 /* View */,
+				3BA688C421BA5BDB00854030 /* SHContactsListViewController.h */,
+				3BA688C021BA5BDB00854030 /* SHContactsListViewController.m */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		3BA688C121BA5BDB00854030 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BA688C221BA5BDB00854030 /* ContactCell.m */,
+				3BA688C321BA5BDB00854030 /* ContactCell.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E26616B349A0B7A4EE34779F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D06A15D40662D7D437D37535 /* Pods-RongCloudDemo.debug.xcconfig */,
+				BB3C891B6BD0937ACEBC578B /* Pods-RongCloudDemo.release.xcconfig */,
+				E136878BACEEE691F24D11F2 /* Pods-RongCloudDemoTests.debug.xcconfig */,
+				F2025791764707E207988B0A /* Pods-RongCloudDemoTests.release.xcconfig */,
+				77E5BD714C218332FD71E759 /* Pods-RongCloudDemoUITests.debug.xcconfig */,
+				61D2181E95025DCEC2BB756E /* Pods-RongCloudDemoUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -472,14 +336,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3B1A7E6021ACDEFF000B06D4 /* RongCloudDemo */ = {
+		3BA6885C21BA5A1700854030 /* RongCloudDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B1A7E8D21ACDF01000B06D4 /* Build configuration list for PBXNativeTarget "RongCloudDemo" */;
+			buildConfigurationList = 3BA6888921BA5A1800854030 /* Build configuration list for PBXNativeTarget "RongCloudDemo" */;
 			buildPhases = (
-				7FEFED51C395BD5309CF2FC9 /* [CP] Check Pods Manifest.lock */,
-				3B1A7E5D21ACDEFF000B06D4 /* Sources */,
-				3B1A7E5E21ACDEFF000B06D4 /* Frameworks */,
-				3B1A7E5F21ACDEFF000B06D4 /* Resources */,
+				1237D2CB5BBC31E3A36B4DA8 /* [CP] Check Pods Manifest.lock */,
+				3BA6885921BA5A1700854030 /* Sources */,
+				3BA6885A21BA5A1700854030 /* Frameworks */,
+				3BA6885B21BA5A1700854030 /* Resources */,
+				24CF1C4287EBC52D4C15E1C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -487,70 +352,70 @@
 			);
 			name = RongCloudDemo;
 			productName = RongCloudDemo;
-			productReference = 3B1A7E6121ACDEFF000B06D4 /* RongCloudDemo.app */;
+			productReference = 3BA6885D21BA5A1700854030 /* RongCloudDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3B1A7E7821ACDF01000B06D4 /* RongCloudDemoTests */ = {
+		3BA6887421BA5A1800854030 /* RongCloudDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B1A7E9021ACDF01000B06D4 /* Build configuration list for PBXNativeTarget "RongCloudDemoTests" */;
+			buildConfigurationList = 3BA6888C21BA5A1800854030 /* Build configuration list for PBXNativeTarget "RongCloudDemoTests" */;
 			buildPhases = (
-				92A6D61953557FD604102C58 /* [CP] Check Pods Manifest.lock */,
-				3B1A7E7521ACDF01000B06D4 /* Sources */,
-				3B1A7E7621ACDF01000B06D4 /* Frameworks */,
-				3B1A7E7721ACDF01000B06D4 /* Resources */,
+				E905908C42F4468142522F4C /* [CP] Check Pods Manifest.lock */,
+				3BA6887121BA5A1800854030 /* Sources */,
+				3BA6887221BA5A1800854030 /* Frameworks */,
+				3BA6887321BA5A1800854030 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3B1A7E7B21ACDF01000B06D4 /* PBXTargetDependency */,
+				3BA6887721BA5A1800854030 /* PBXTargetDependency */,
 			);
 			name = RongCloudDemoTests;
 			productName = RongCloudDemoTests;
-			productReference = 3B1A7E7921ACDF01000B06D4 /* RongCloudDemoTests.xctest */;
+			productReference = 3BA6887521BA5A1800854030 /* RongCloudDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3B1A7E8321ACDF01000B06D4 /* RongCloudDemoUITests */ = {
+		3BA6887F21BA5A1800854030 /* RongCloudDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B1A7E9321ACDF01000B06D4 /* Build configuration list for PBXNativeTarget "RongCloudDemoUITests" */;
+			buildConfigurationList = 3BA6888F21BA5A1800854030 /* Build configuration list for PBXNativeTarget "RongCloudDemoUITests" */;
 			buildPhases = (
-				0FE5B65F46D9ED1DAA47AAED /* [CP] Check Pods Manifest.lock */,
-				3B1A7E8021ACDF01000B06D4 /* Sources */,
-				3B1A7E8121ACDF01000B06D4 /* Frameworks */,
-				3B1A7E8221ACDF01000B06D4 /* Resources */,
+				220424B32FBD53637DF4F48E /* [CP] Check Pods Manifest.lock */,
+				3BA6887C21BA5A1800854030 /* Sources */,
+				3BA6887D21BA5A1800854030 /* Frameworks */,
+				3BA6887E21BA5A1800854030 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3B1A7E8621ACDF01000B06D4 /* PBXTargetDependency */,
+				3BA6888221BA5A1800854030 /* PBXTargetDependency */,
 			);
 			name = RongCloudDemoUITests;
 			productName = RongCloudDemoUITests;
-			productReference = 3B1A7E8421ACDF01000B06D4 /* RongCloudDemoUITests.xctest */;
+			productReference = 3BA6888021BA5A1800854030 /* RongCloudDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3B1A7E5921ACDEFE000B06D4 /* Project object */ = {
+		3BA6885521BA5A1700854030 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = RongCloud;
 				TargetAttributes = {
-					3B1A7E6021ACDEFF000B06D4 = {
+					3BA6885C21BA5A1700854030 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					3B1A7E7821ACDF01000B06D4 = {
+					3BA6887421BA5A1800854030 = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 3B1A7E6021ACDEFF000B06D4;
+						TestTargetID = 3BA6885C21BA5A1700854030;
 					};
-					3B1A7E8321ACDF01000B06D4 = {
+					3BA6887F21BA5A1800854030 = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 3B1A7E6021ACDEFF000B06D4;
+						TestTargetID = 3BA6885C21BA5A1700854030;
 					};
 				};
 			};
-			buildConfigurationList = 3B1A7E5C21ACDEFE000B06D4 /* Build configuration list for PBXProject "RongCloudDemo" */;
+			buildConfigurationList = 3BA6885821BA5A1700854030 /* Build configuration list for PBXProject "RongCloudDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -559,45 +424,40 @@
 				Base,
 				"zh-Hans",
 			);
-			mainGroup = 3B1A7E5821ACDEFE000B06D4;
-			productRefGroup = 3B1A7E6221ACDEFF000B06D4 /* Products */;
+			mainGroup = 3BA6885421BA5A1700854030;
+			productRefGroup = 3BA6885E21BA5A1700854030 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3B1A7E6021ACDEFF000B06D4 /* RongCloudDemo */,
-				3B1A7E7821ACDF01000B06D4 /* RongCloudDemoTests */,
-				3B1A7E8321ACDF01000B06D4 /* RongCloudDemoUITests */,
+				3BA6885C21BA5A1700854030 /* RongCloudDemo */,
+				3BA6887421BA5A1800854030 /* RongCloudDemoTests */,
+				3BA6887F21BA5A1800854030 /* RongCloudDemoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3B1A7E5F21ACDEFF000B06D4 /* Resources */ = {
+		3BA6885B21BA5A1700854030 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B1A7E7121ACDF00000B06D4 /* LaunchScreen.storyboard in Resources */,
-				3B1A7E6E21ACDF00000B06D4 /* Assets.xcassets in Resources */,
-				3B1A7E6C21ACDEFF000B06D4 /* Main.storyboard in Resources */,
-				3BCEA1D121AE4D610029F608 /* avatar_users_72px_1108447_easyicon.net.png in Resources */,
-				3BCEA1E321AF8F3B0029F608 /* Swift.png in Resources */,
-				3B5DA89D21AE3F9C009148FE /* RongCloudKit.strings in Resources */,
-				3B5DA89F21AE3F9C009148FE /* Emoji.plist in Resources */,
-				3BCEA1E121AF8CEE0029F608 /* urlPic.png in Resources */,
-				3B5DA8A021AE3F9C009148FE /* RongCloud.bundle in Resources */,
-				3B5DA89C21AE3F9C009148FE /* RCColor.plist in Resources */,
-				3B5DA89B21AE3F9C009148FE /* RCConfig.plist in Resources */,
+				3BA688D021BA5BDC00854030 /* avatar_users_72px_1108447_easyicon.net.png in Resources */,
+				3BA688D621BA5BDC00854030 /* Swift.png in Resources */,
+				3BA6886D21BA5A1800854030 /* LaunchScreen.storyboard in Resources */,
+				3BA688CF21BA5BDC00854030 /* urlPic.png in Resources */,
+				3BA6886A21BA5A1800854030 /* Assets.xcassets in Resources */,
+				3BA6886821BA5A1700854030 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B1A7E7721ACDF01000B06D4 /* Resources */ = {
+		3BA6887321BA5A1800854030 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B1A7E8221ACDF01000B06D4 /* Resources */ = {
+		3BA6887E21BA5A1800854030 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -607,29 +467,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0FE5B65F46D9ED1DAA47AAED /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RongCloudDemoUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7FEFED51C395BD5309CF2FC9 /* [CP] Check Pods Manifest.lock */ = {
+		1237D2CB5BBC31E3A36B4DA8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -651,7 +489,61 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		92A6D61953557FD604102C58 /* [CP] Check Pods Manifest.lock */ = {
+		220424B32FBD53637DF4F48E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RongCloudDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24CF1C4287EBC52D4C15E1C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo-resources.sh",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCColor.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RongCloud.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Emoji.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCColor.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCConfig.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E905908C42F4468142522F4C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -676,89 +568,80 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3B1A7E5D21ACDEFF000B06D4 /* Sources */ = {
+		3BA6885921BA5A1700854030 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B5DA8B821AE43B0009148FE /* UserService.m in Sources */,
-				3BCEA1F321B0E8230029F608 /* HeaderView.m in Sources */,
-				3BB72B1221AE329B005FA5F0 /* SHConversationListViewController.m in Sources */,
-				3BB72B0821AE3268005FA5F0 /* RootTabBarController.m in Sources */,
-				3BCEA1DB21AEA2140029F608 /* SHMessageContent.m in Sources */,
-				3B1A7E7421ACDF00000B06D4 /* main.m in Sources */,
-				3B5DA8B121AE3FE9009148FE /* ContactCell.m in Sources */,
-				3BCEA1EF21B0E7330029F608 /* UserViewController.m in Sources */,
-				3BB72B1121AE329B005FA5F0 /* SHConversationViewController.m in Sources */,
-				3B1A7E6621ACDEFF000B06D4 /* AppDelegate.m in Sources */,
-				3B5DA8B021AE3FE9009148FE /* SHContactsListViewController.m in Sources */,
-				3BCEA23721B131A30029F608 /* SHExpressionTab.m in Sources */,
-				3BCEA1D721AE7CB40029F608 /* LoginViewController.m in Sources */,
-				3B5DA8AE21AE3FE9009148FE /* SHGroupListViewController.m in Sources */,
-				3BCEA1DF21AF80920029F608 /* SHWebMessageCell.m in Sources */,
+				3BA688C821BA5BDC00854030 /* SHConversationListViewController.m in Sources */,
+				3BA688D721BA5BDC00854030 /* RootTabBarController.m in Sources */,
+				3BA688C921BA5BDC00854030 /* SHMessageContent.m in Sources */,
+				3BA688C621BA5BDC00854030 /* LoginViewController.m in Sources */,
+				3BA688DD21BA5BDC00854030 /* ContactCell.m in Sources */,
+				3BA688CA21BA5BDC00854030 /* SHWebMessageCell.m in Sources */,
+				3BA688D821BA5BDC00854030 /* HeaderView.m in Sources */,
+				3BA688DA21BA5BDC00854030 /* UserService.m in Sources */,
+				3BA688DC21BA5BDC00854030 /* SHContactsListViewController.m in Sources */,
+				3BA688CB21BA5BDC00854030 /* SHGroupListViewController.m in Sources */,
+				3BA6887021BA5A1800854030 /* main.m in Sources */,
+				3BA688D921BA5BDC00854030 /* UserViewController.m in Sources */,
+				3BA688C721BA5BDC00854030 /* SHConversationViewController.m in Sources */,
+				3BA688DB21BA5BDC00854030 /* SHExpressionTab.m in Sources */,
+				3BA6886221BA5A1700854030 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B1A7E7521ACDF01000B06D4 /* Sources */ = {
+		3BA6887121BA5A1800854030 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B1A7E7E21ACDF01000B06D4 /* RongCloudDemoTests.m in Sources */,
+				3BA6887A21BA5A1800854030 /* RongCloudDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B1A7E8021ACDF01000B06D4 /* Sources */ = {
+		3BA6887C21BA5A1800854030 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B1A7E8921ACDF01000B06D4 /* RongCloudDemoUITests.m in Sources */,
+				3BA6888521BA5A1800854030 /* RongCloudDemoUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3B1A7E7B21ACDF01000B06D4 /* PBXTargetDependency */ = {
+		3BA6887721BA5A1800854030 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3B1A7E6021ACDEFF000B06D4 /* RongCloudDemo */;
-			targetProxy = 3B1A7E7A21ACDF01000B06D4 /* PBXContainerItemProxy */;
+			target = 3BA6885C21BA5A1700854030 /* RongCloudDemo */;
+			targetProxy = 3BA6887621BA5A1800854030 /* PBXContainerItemProxy */;
 		};
-		3B1A7E8621ACDF01000B06D4 /* PBXTargetDependency */ = {
+		3BA6888221BA5A1800854030 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3B1A7E6021ACDEFF000B06D4 /* RongCloudDemo */;
-			targetProxy = 3B1A7E8521ACDF01000B06D4 /* PBXContainerItemProxy */;
+			target = 3BA6885C21BA5A1700854030 /* RongCloudDemo */;
+			targetProxy = 3BA6888121BA5A1800854030 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3B1A7E6A21ACDEFF000B06D4 /* Main.storyboard */ = {
+		3BA6886621BA5A1700854030 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3B1A7E6B21ACDEFF000B06D4 /* Base */,
+				3BA6886721BA5A1700854030 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		3B1A7E6F21ACDF00000B06D4 /* LaunchScreen.storyboard */ = {
+		3BA6886B21BA5A1800854030 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3B1A7E7021ACDF00000B06D4 /* Base */,
+				3BA6886C21BA5A1800854030 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		3B5DA89321AE3F9C009148FE /* RongCloudKit.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B5DA89421AE3F9C009148FE /* zh-Hans */,
-				3B5DA89521AE3F9C009148FE /* en */,
-			);
-			name = RongCloudKit.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3B1A7E8B21ACDF01000B06D4 /* Debug */ = {
+		3BA6888721BA5A1800854030 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -817,7 +700,7 @@
 			};
 			name = Debug;
 		};
-		3B1A7E8C21ACDF01000B06D4 /* Release */ = {
+		3BA6888821BA5A1800854030 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -870,148 +753,132 @@
 			};
 			name = Release;
 		};
-		3B1A7E8E21ACDF01000B06D4 /* Debug */ = {
+		3BA6888A21BA5A1800854030 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CE38D9F1CC4A821E2C2112C /* Pods-RongCloudDemo.debug.xcconfig */;
+			baseConfigurationReference = D06A15D40662D7D437D37535 /* Pods-RongCloudDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3T8XA4F59Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/RongCloudDemo",
-					"$(PROJECT_DIR)/RongCloudDemo/IMKit/IMLib",
-					"$(PROJECT_DIR)/RongCloudDemo/IMLib",
-					"$(PROJECT_DIR)/RongCloudDemo/IMKit",
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMLib",
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMKit",
 				);
 				INFOPLIST_FILE = RongCloudDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/RongCloudDemo/IMKit/IMLib",
-					"$(PROJECT_DIR)/RongCloudDemo/IMLib",
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMLib",
 				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = RongCloud.RongCloudDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.rongcloud.RongCloudDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		3B1A7E8F21ACDF01000B06D4 /* Release */ = {
+		3BA6888B21BA5A1800854030 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A945B34B184CCB0A93C66AE /* Pods-RongCloudDemo.release.xcconfig */;
+			baseConfigurationReference = BB3C891B6BD0937ACEBC578B /* Pods-RongCloudDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3T8XA4F59Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/RongCloudDemo",
-					"$(PROJECT_DIR)/RongCloudDemo/IMKit/IMLib",
-					"$(PROJECT_DIR)/RongCloudDemo/IMLib",
-					"$(PROJECT_DIR)/RongCloudDemo/IMKit",
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMLib",
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMKit",
 				);
 				INFOPLIST_FILE = RongCloudDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/RongCloudDemo/IMKit/IMLib",
-					"$(PROJECT_DIR)/RongCloudDemo/IMLib",
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMLib",
 				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = RongCloud.RongCloudDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.rongcloud.RongCloudDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		3B1A7E9121ACDF01000B06D4 /* Debug */ = {
+		3BA6888D21BA5A1800854030 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EF2A8743AF76573B6D2C638 /* Pods-RongCloudDemoTests.debug.xcconfig */;
+			baseConfigurationReference = E136878BACEEE691F24D11F2 /* Pods-RongCloudDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3T8XA4F59Q;
 				INFOPLIST_FILE = RongCloudDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = RongCloud.RongCloudDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.rongcloud.RongCloudDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RongCloudDemo.app/RongCloudDemo";
 			};
 			name = Debug;
 		};
-		3B1A7E9221ACDF01000B06D4 /* Release */ = {
+		3BA6888E21BA5A1800854030 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A3CC42765C15E2B5B411594 /* Pods-RongCloudDemoTests.release.xcconfig */;
+			baseConfigurationReference = F2025791764707E207988B0A /* Pods-RongCloudDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3T8XA4F59Q;
 				INFOPLIST_FILE = RongCloudDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = RongCloud.RongCloudDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.rongcloud.RongCloudDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RongCloudDemo.app/RongCloudDemo";
 			};
 			name = Release;
 		};
-		3B1A7E9421ACDF01000B06D4 /* Debug */ = {
+		3BA6889021BA5A1800854030 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95C3AC61B9B2688B762031D4 /* Pods-RongCloudDemoUITests.debug.xcconfig */;
+			baseConfigurationReference = 77E5BD714C218332FD71E759 /* Pods-RongCloudDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3T8XA4F59Q;
 				INFOPLIST_FILE = RongCloudDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = RongCloud.RongCloudDemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.rongcloud.RongCloudDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = RongCloudDemo;
 			};
 			name = Debug;
 		};
-		3B1A7E9521ACDF01000B06D4 /* Release */ = {
+		3BA6889121BA5A1800854030 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8586DDC8AB439F48653F578A /* Pods-RongCloudDemoUITests.release.xcconfig */;
+			baseConfigurationReference = 61D2181E95025DCEC2BB756E /* Pods-RongCloudDemoUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3T8XA4F59Q;
 				INFOPLIST_FILE = RongCloudDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = RongCloud.RongCloudDemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.rongcloud.RongCloudDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = RongCloudDemo;
@@ -1021,43 +888,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3B1A7E5C21ACDEFE000B06D4 /* Build configuration list for PBXProject "RongCloudDemo" */ = {
+		3BA6885821BA5A1700854030 /* Build configuration list for PBXProject "RongCloudDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B1A7E8B21ACDF01000B06D4 /* Debug */,
-				3B1A7E8C21ACDF01000B06D4 /* Release */,
+				3BA6888721BA5A1800854030 /* Debug */,
+				3BA6888821BA5A1800854030 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B1A7E8D21ACDF01000B06D4 /* Build configuration list for PBXNativeTarget "RongCloudDemo" */ = {
+		3BA6888921BA5A1800854030 /* Build configuration list for PBXNativeTarget "RongCloudDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B1A7E8E21ACDF01000B06D4 /* Debug */,
-				3B1A7E8F21ACDF01000B06D4 /* Release */,
+				3BA6888A21BA5A1800854030 /* Debug */,
+				3BA6888B21BA5A1800854030 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B1A7E9021ACDF01000B06D4 /* Build configuration list for PBXNativeTarget "RongCloudDemoTests" */ = {
+		3BA6888C21BA5A1800854030 /* Build configuration list for PBXNativeTarget "RongCloudDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B1A7E9121ACDF01000B06D4 /* Debug */,
-				3B1A7E9221ACDF01000B06D4 /* Release */,
+				3BA6888D21BA5A1800854030 /* Debug */,
+				3BA6888E21BA5A1800854030 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B1A7E9321ACDF01000B06D4 /* Build configuration list for PBXNativeTarget "RongCloudDemoUITests" */ = {
+		3BA6888F21BA5A1800854030 /* Build configuration list for PBXNativeTarget "RongCloudDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B1A7E9421ACDF01000B06D4 /* Debug */,
-				3B1A7E9521ACDF01000B06D4 /* Release */,
+				3BA6889021BA5A1800854030 /* Debug */,
+				3BA6889121BA5A1800854030 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3B1A7E5921ACDEFE000B06D4 /* Project object */;
+	rootObject = 3BA6885521BA5A1700854030 /* Project object */;
 }
