@@ -15,6 +15,7 @@
     if (self = [super init]) {
         [RCIM sharedRCIM].userInfoDataSource = self;
         [RCIM sharedRCIM].groupInfoDataSource = self;
+        [RCIM sharedRCIM].groupMemberDataSource = self;
     }
     return self;
 }
@@ -47,6 +48,12 @@
             completion(group);
         }
     }
+}
+
+- (void)getAllMembersOfGroup:(NSString *)groupId result:(void (^)(NSArray<NSString *> *))resultBlock {
+    
+    NSArray *ids = @[@"15510269373",@"15510269374",@"15510269375",@"15510269376",@"15510269377",@"15510269372"];
+    resultBlock(ids);
 }
 
 - (NSArray *)groups {

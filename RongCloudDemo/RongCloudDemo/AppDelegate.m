@@ -73,6 +73,8 @@
     
     // 设置消息接收的delegate
     [RCIM sharedRCIM].receiveMessageDelegate = self;
+    // 开启群组 @ 功能
+    [RCIM sharedRCIM].enableMessageMentioned = YES;
     
     // 设置发送已读回执的会话类型
     [RCIM sharedRCIM].enabledReadReceiptConversationTypeList = @[@(ConversationType_PRIVATE), @(ConversationType_GROUP) ];
