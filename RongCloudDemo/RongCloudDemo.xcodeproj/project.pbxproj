@@ -34,6 +34,8 @@
 		3BA688E621BE60F900854030 /* RongSticker.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BA688E121BE60F800854030 /* RongSticker.strings */; };
 		3BA688E721BE60F900854030 /* RongSticker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BA688E421BE60F800854030 /* RongSticker.bundle */; };
 		3BA688E821BE60F900854030 /* RongSticker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA688E521BE60F800854030 /* RongSticker.framework */; };
+		3BA6898D21C0C0F200854030 /* BQMMRongCloudExt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA6898B21C0BFEE00854030 /* BQMMRongCloudExt.framework */; };
+		3BA6898E21C0C10F00854030 /* BQMM.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BA6898921C0BFC700854030 /* BQMM.bundle */; };
 		AC35CE09A7AD61F9F4209E6E /* libPods-RongCloudDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05243C18222CE78D25349671 /* libPods-RongCloudDemo.a */; };
 		AD663A830ED6269E87F1758C /* libPods-RongCloudDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA38EE95A59BCA953C10F655 /* libPods-RongCloudDemoTests.a */; };
 		CC1C182C3F6B213C7D6D8165 /* libPods-RongCloudDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7D6705EB3F5944F7DEBD4F /* libPods-RongCloudDemoUITests.a */; };
@@ -106,6 +108,9 @@
 		3BA688E321BE60F800854030 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/RongSticker.strings; sourceTree = "<group>"; };
 		3BA688E421BE60F800854030 /* RongSticker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RongSticker.bundle; sourceTree = "<group>"; };
 		3BA688E521BE60F800854030 /* RongSticker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RongSticker.framework; sourceTree = "<group>"; };
+		3BA6898721C0BFAB00854030 /* BQMMRongCloudExt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BQMMRongCloudExt.framework; path = ../../../../Desktop/bqmm/BQMMRongCloudExt.framework; sourceTree = "<group>"; };
+		3BA6898921C0BFC700854030 /* BQMM.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BQMM.bundle; sourceTree = "<group>"; };
+		3BA6898B21C0BFEE00854030 /* BQMMRongCloudExt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BQMMRongCloudExt.framework; sourceTree = "<group>"; };
 		61D2181E95025DCEC2BB756E /* Pods-RongCloudDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoUITests/Pods-RongCloudDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		77E5BD714C218332FD71E759 /* Pods-RongCloudDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoUITests/Pods-RongCloudDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BA38EE95A59BCA953C10F655 /* libPods-RongCloudDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RongCloudDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA6898D21C0C0F200854030 /* BQMMRongCloudExt.framework in Frameworks */,
 				3BA688DF21BA5C4300854030 /* libSDWebImage.a in Frameworks */,
 				3BA688E821BE60F900854030 /* RongSticker.framework in Frameworks */,
 				AC35CE09A7AD61F9F4209E6E /* libPods-RongCloudDemo.a in Frameworks */,
@@ -149,6 +155,7 @@
 		10EF6FCA6F45BD1FBE135827 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3BA6898721C0BFAB00854030 /* BQMMRongCloudExt.framework */,
 				3BA688DE21BA5C4300854030 /* libSDWebImage.a */,
 				05243C18222CE78D25349671 /* libPods-RongCloudDemo.a */,
 				BA38EE95A59BCA953C10F655 /* libPods-RongCloudDemoTests.a */,
@@ -160,6 +167,8 @@
 		3BA6885421BA5A1700854030 = {
 			isa = PBXGroup;
 			children = (
+				3BA6898B21C0BFEE00854030 /* BQMMRongCloudExt.framework */,
+				3BA6898921C0BFC700854030 /* BQMM.bundle */,
 				3BA6885F21BA5A1700854030 /* RongCloudDemo */,
 				3BA6887821BA5A1800854030 /* RongCloudDemoTests */,
 				3BA6888321BA5A1800854030 /* RongCloudDemoUITests */,
@@ -460,6 +469,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA6898E21C0C10F00854030 /* BQMM.bundle in Resources */,
 				3BA688E621BE60F900854030 /* RongSticker.strings in Resources */,
 				3BA688D021BA5BDC00854030 /* avatar_users_72px_1108447_easyicon.net.png in Resources */,
 				3BA688D621BA5BDC00854030 /* Swift.png in Resources */,
@@ -795,6 +805,7 @@
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMLib",
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMKit",
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/RongSticker",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = RongCloudDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -824,6 +835,7 @@
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMLib",
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMKit",
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/RongSticker",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = RongCloudDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
