@@ -10,14 +10,21 @@
 #import "SHMessageContent.h"
 #import "SHWebMessageCell.h"
 #import "SHExpressionTab.h"
+#import <IQKeyboardManager.h>
 
 // 聊天界面
 @implementation SHConversationViewController
 
-//- (void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
 //    // 设置输入框的默认输入模式
 //    self.defaultInputType = RCChatSessionInputBarInputVoice;
-//}
+    
+    // 解决三方键盘冲突问题
+    [IQKeyboardManager sharedManager].enable = NO;
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -16,12 +16,6 @@
 
 @implementation SHConversationListViewController
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"receiveMessage" object:self];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     

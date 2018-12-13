@@ -11,6 +11,7 @@
 #import "UserService.h"
 #import "SHMessageContent.h"
 #import "Login/LoginViewController.h"
+#import <IQKeyboardManager.h>
 
 @interface AppDelegate ()
 
@@ -30,6 +31,8 @@
     self.window.rootViewController = nav;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [IQKeyboardManager sharedManager].enable = YES;
     
     [self initRongCloud];
     

@@ -1,4 +1,5 @@
 PODS:
+  - IQKeyboardManager (3.3.7)
   - RongCloudIM/IMKit (2.9.8):
     - RongCloudIM/IMLib
   - RongCloudIM/IMLib (2.9.8)
@@ -7,19 +8,22 @@ PODS:
   - SDWebImage/Core (4.4.3)
 
 DEPENDENCIES:
+  - IQKeyboardManager (= 3.3.7)
   - RongCloudIM/IMKit (~> 2.9.8)
   - RongCloudIM/IMLib (~> 2.9.8)
   - SDWebImage (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - IQKeyboardManager
     - RongCloudIM
     - SDWebImage
 
 SPEC CHECKSUMS:
+  IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
   RongCloudIM: dcfa8c4fe11e992c0d187f7dda71f2ce5bfae4d1
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
 
-PODFILE CHECKSUM: de9aea37f6a2149a297599079aad4e946d261f33
+PODFILE CHECKSUM: c140603613c406225188c83350461dad73b0883b
 
 COCOAPODS: 1.5.3
