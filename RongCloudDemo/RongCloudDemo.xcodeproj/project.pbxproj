@@ -36,6 +36,7 @@
 		3BA688E821BE60F900854030 /* RongSticker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA688E521BE60F800854030 /* RongSticker.framework */; };
 		3BA6898D21C0C0F200854030 /* BQMMRongCloudExt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA6898B21C0BFEE00854030 /* BQMMRongCloudExt.framework */; };
 		3BA6898E21C0C10F00854030 /* BQMM.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BA6898921C0BFC700854030 /* BQMM.bundle */; };
+		3BA689A221C38D7700854030 /* RongSight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA689A121C38D7700854030 /* RongSight.framework */; };
 		AC35CE09A7AD61F9F4209E6E /* libPods-RongCloudDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05243C18222CE78D25349671 /* libPods-RongCloudDemo.a */; };
 		AD663A830ED6269E87F1758C /* libPods-RongCloudDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA38EE95A59BCA953C10F655 /* libPods-RongCloudDemoTests.a */; };
 		CC1C182C3F6B213C7D6D8165 /* libPods-RongCloudDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7D6705EB3F5944F7DEBD4F /* libPods-RongCloudDemoUITests.a */; };
@@ -111,6 +112,7 @@
 		3BA6898721C0BFAB00854030 /* BQMMRongCloudExt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BQMMRongCloudExt.framework; path = ../../../../Desktop/bqmm/BQMMRongCloudExt.framework; sourceTree = "<group>"; };
 		3BA6898921C0BFC700854030 /* BQMM.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BQMM.bundle; sourceTree = "<group>"; };
 		3BA6898B21C0BFEE00854030 /* BQMMRongCloudExt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BQMMRongCloudExt.framework; sourceTree = "<group>"; };
+		3BA689A121C38D7700854030 /* RongSight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RongSight.framework; sourceTree = "<group>"; };
 		61D2181E95025DCEC2BB756E /* Pods-RongCloudDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoUITests/Pods-RongCloudDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		77E5BD714C218332FD71E759 /* Pods-RongCloudDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoUITests/Pods-RongCloudDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BA38EE95A59BCA953C10F655 /* libPods-RongCloudDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RongCloudDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +132,7 @@
 				3BA688DF21BA5C4300854030 /* libSDWebImage.a in Frameworks */,
 				3BA688E821BE60F900854030 /* RongSticker.framework in Frameworks */,
 				AC35CE09A7AD61F9F4209E6E /* libPods-RongCloudDemo.a in Frameworks */,
+				3BA689A221C38D7700854030 /* RongSight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +284,7 @@
 		3BA688A321BA5BDB00854030 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				3BA689A021C38D7700854030 /* Sight */,
 				3BA688E021BE60F800854030 /* RongSticker */,
 				3BA688A821BA5BDB00854030 /* urlPic.png */,
 				3BA688A921BA5BDB00854030 /* avatar_users_72px_1108447_easyicon.net.png */,
@@ -346,6 +350,14 @@
 				3BA688E521BE60F800854030 /* RongSticker.framework */,
 			);
 			path = RongSticker;
+			sourceTree = "<group>";
+		};
+		3BA689A021C38D7700854030 /* Sight */ = {
+			isa = PBXGroup;
+			children = (
+				3BA689A121C38D7700854030 /* RongSight.framework */,
+			);
+			path = Sight;
 			sourceTree = "<group>";
 		};
 		E26616B349A0B7A4EE34779F /* Pods */ = {
@@ -806,6 +818,7 @@
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMKit",
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/RongSticker",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/RongCloudDemo/Libraries/Sight",
 				);
 				INFOPLIST_FILE = RongCloudDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -836,6 +849,7 @@
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMKit",
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/RongSticker",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/RongCloudDemo/Libraries/Sight",
 				);
 				INFOPLIST_FILE = RongCloudDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
