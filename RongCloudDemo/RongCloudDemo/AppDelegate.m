@@ -70,6 +70,7 @@
     // 设置后显示好友信息
     [RCIM sharedRCIM].userInfoDataSource = [UserService share];
     [RCIM sharedRCIM].groupInfoDataSource = [UserService share];
+    [RCIM sharedRCIM].isMediaSelectorContainVideo = YES;
     
     // 设置消息接收的delegate
     [RCIM sharedRCIM].receiveMessageDelegate = self;
