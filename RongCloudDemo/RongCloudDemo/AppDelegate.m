@@ -12,7 +12,7 @@
 #import "SHMessageContent.h"
 #import "Login/LoginViewController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<RCIMConnectionStatusDelegate>
 
 @end
 
@@ -71,6 +71,7 @@
     [RCIM sharedRCIM].userInfoDataSource = [UserService share];
     [RCIM sharedRCIM].groupInfoDataSource = [UserService share];
     [RCIM sharedRCIM].isMediaSelectorContainVideo = YES;
+    [RCIM sharedRCIM].connectionStatusDelegate = self;
     
     // 设置消息接收的delegate
     [RCIM sharedRCIM].receiveMessageDelegate = self;
@@ -82,6 +83,13 @@
     
     // 注册该自定义消息类：只有注册了该消息类型之后，SDK 才能识别和编码、解码该类型的消息。
     [[RCIM sharedRCIM] registerMessageType:SHMessageContent.class];
+    
+    //设置Log级别，开发阶段打印详细log
+    [RCIMClient sharedRCIMClient].logLevel = RC_Log_Level_Info;
+}
+
+- (void)onRCIMConnectionStatusChanged:(RCConnectionStatus)status {
+    NSLog(@"-------------状态变化");
 }
 
 // 接收消息回调

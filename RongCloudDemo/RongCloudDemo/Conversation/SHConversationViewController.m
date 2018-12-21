@@ -27,7 +27,7 @@
     
 //    [self setupEmotionTab];
     
-//    [self.chatSessionInputBarControl.pluginBoardView insertItemWithImage:[UIImage imageNamed:@"urlPic"] title:@"链接" tag:2001];
+    [self.chatSessionInputBarControl.pluginBoardView insertItemWithImage:[UIImage imageNamed:@"urlPic"] title:@"链接" tag:2001];
     /*!
      注册自定义消息的Cell
      
@@ -57,6 +57,14 @@
             [super pluginBoardView:pluginBoardView clickedItemWithTag:tag];
 
             SHMessageContent *messageContent = [SHMessageContent messageWithTitle:@"标题测试" detail:@"详情测试" imageUrl:@"图片url" url:@"https://www.rongcloud.cn/"];
+            
+            // 测试 Lib 中发送自定义消息
+//            [[RCIMClient sharedRCIMClient] sendMessage:self.conversationType targetId:self.targetId content:messageContent pushContent:nil pushData:nil success:^(long messageId) {
+//                NSLog(@"发送成功");
+//            } error:^(RCErrorCode nErrorCode, long messageId) {
+//                NSLog(@"发送失败 - %ld - %ld", (long)nErrorCode, messageId);
+//            }];
+            
             [self sendMessage:messageContent pushContent:nil];
             break;
         }

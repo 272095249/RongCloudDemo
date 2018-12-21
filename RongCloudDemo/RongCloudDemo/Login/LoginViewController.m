@@ -84,6 +84,10 @@ static NSString *loginCellID = @"LoginCellID";
             // 是否开启发送输入状态
             [RCIM sharedRCIM].enableTypingStatus = YES;
             dispatch_async(dispatch_get_main_queue(), ^{
+                // 添加获取未读消息数
+                int unreadMsgCount = [[RCIMClient sharedRCIMClient] getUnreadCount:@[@(ConversationType_PRIVATE),@(ConversationType_DISCUSSION), @(ConversationType_APPSERVICE),@(ConversationType_PUBLICSERVICE), @(ConversationType_GROUP)]];
+                NSLog(@"------------%d",unreadMsgCount);
+                
                 RootTabBarController *vc = [[RootTabBarController alloc] init];
                 [UIApplication sharedApplication].keyWindow.rootViewController = vc;
             });
