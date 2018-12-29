@@ -88,6 +88,8 @@ static NSString *groupCellID = @"GroupCellID";
         chatVC.title = group.groupName;
     } else {
         chatVC.conversationType = ConversationType_CHATROOM;
+        // 设置聊天室不获取历史消息
+        chatVC.defaultHistoryMessageCountOfChatRoom = -1;
         chatVC.targetId = self.ids[indexPath.row];
         chatVC.title = self.titles[indexPath.row];
     }
