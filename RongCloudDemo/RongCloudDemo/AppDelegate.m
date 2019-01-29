@@ -78,6 +78,9 @@
     // 开启群组 @ 功能
     [RCIM sharedRCIM].enableMessageMentioned = YES;
     
+    // 消息撤回
+    [RCIM sharedRCIM].enableMessageRecall = YES;
+    
     // 设置发送已读回执的会话类型
     [RCIM sharedRCIM].enabledReadReceiptConversationTypeList = @[@(ConversationType_PRIVATE), @(ConversationType_GROUP) ];
     
@@ -90,6 +93,7 @@
 
 - (void)onRCIMConnectionStatusChanged:(RCConnectionStatus)status {
     NSLog(@"-------------状态变化");
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"connectionStatusChanged" object:nil];
 }
 
 // 接收消息回调

@@ -10,7 +10,7 @@
 #import "SHConversationViewController.h"
 #import "UserService.h"
 
-@interface SHConversationViewController ()
+@interface SHConversationListViewController ()
 
 @end
 
@@ -18,6 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadConversationListVC) name:@"connectionStatusChanged" object:nil];
+
     
     [self setDisplayConversationTypes:@[@(ConversationType_PRIVATE), // 单聊
                                         @(ConversationType_DISCUSSION), // 讨论组
@@ -54,6 +57,14 @@
     
     chatVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:chatVC animated:YES];
+}
+
+- (void)reloadConversationListVC {
+    [self refreshConversationTableViewIfNeeded];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end
