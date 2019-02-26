@@ -11,6 +11,7 @@
 #import "UserService.h"
 #import "SHMessageContent.h"
 #import "Login/LoginViewController.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface AppDelegate ()<RCIMConnectionStatusDelegate>
 
@@ -91,6 +92,15 @@
     [RCIMClient sharedRCIMClient].logLevel = RC_Log_Level_Info;
 }
 
+//- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+//    [[RCIMClient sharedRCIMClient] recordLocalNotificationEvent:notification];
+
+    //震动
+//    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+//    AudioServicesPlaySystemSound(1007);
+//
+//}
+
 - (void)onRCIMConnectionStatusChanged:(RCConnectionStatus)status {
     NSLog(@"-------------状态变化");
     [[NSNotificationCenter defaultCenter] postNotificationName:@"connectionStatusChanged" object:nil];
@@ -98,6 +108,10 @@
 
 // 接收消息回调
 - (void)onRCIMReceiveMessage:(RCMessage *)message left:(int)left {
+    
+    //震动
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    AudioServicesPlaySystemSound(1007);
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"receiveMessage" object:self];
 }
