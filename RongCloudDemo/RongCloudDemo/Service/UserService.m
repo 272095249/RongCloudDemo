@@ -11,15 +11,6 @@
 
 @implementation UserService
 
-- (instancetype)init{
-    if (self = [super init]) {
-        [RCIM sharedRCIM].userInfoDataSource = self;
-        [RCIM sharedRCIM].groupInfoDataSource = self;
-        [RCIM sharedRCIM].groupMemberDataSource = self;
-    }
-    return self;
-}
-
 + (UserService *)share {
     
     static UserService *userService = nil;
@@ -30,9 +21,6 @@
     return userService;
 }
 
-- (BOOL)isLogin {
-    return [[NSUserDefaults standardUserDefaults] objectForKey:@"isLogin"];
-}
 
 - (void)getUserInfoWithUserId:(NSString *)userId completion:(void (^)(RCUserInfo * _Nonnull))completion {
     for (RCUserInfo *userInfo in [self contacts]) {

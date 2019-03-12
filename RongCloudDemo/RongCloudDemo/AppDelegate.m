@@ -34,6 +34,14 @@
     
     [self initRongCloud];
     
+    // 修改导航颜色以及字体
+//    UIFont *font = [UIFont systemFontOfSize:19.f];
+//    NSDictionary *textAttributes = @{ NSFontAttributeName : font, NSForegroundColorAttributeName : [UIColor whiteColor] };
+//    [[UINavigationBar appearance] setTitleTextAttributes:textAttributes];
+//    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+//    [[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
+    
+    
     // 请求推送权限
     if ([application
          respondsToSelector:@selector(registerUserNotificationSettings:)]) {
@@ -71,6 +79,7 @@
     // 设置后显示好友信息
     [RCIM sharedRCIM].userInfoDataSource = [UserService share];
     [RCIM sharedRCIM].groupInfoDataSource = [UserService share];
+    [RCIM sharedRCIM].groupMemberDataSource = [UserService share];
     [RCIM sharedRCIM].isMediaSelectorContainVideo = YES;
     [RCIM sharedRCIM].connectionStatusDelegate = self;
     
@@ -92,15 +101,6 @@
     [RCIMClient sharedRCIMClient].logLevel = RC_Log_Level_Info;
 }
 
-//- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
-//    [[RCIMClient sharedRCIMClient] recordLocalNotificationEvent:notification];
-
-    //震动
-//    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-//    AudioServicesPlaySystemSound(1007);
-//
-//}
-
 - (void)onRCIMConnectionStatusChanged:(RCConnectionStatus)status {
     NSLog(@"-------------状态变化");
     [[NSNotificationCenter defaultCenter] postNotificationName:@"connectionStatusChanged" object:nil];
@@ -108,10 +108,6 @@
 
 // 接收消息回调
 - (void)onRCIMReceiveMessage:(RCMessage *)message left:(int)left {
-    
-    //震动
-    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-    AudioServicesPlaySystemSound(1007);
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"receiveMessage" object:self];
 }

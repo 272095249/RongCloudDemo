@@ -45,7 +45,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSArray *)groups;
 
-- (BOOL)isLogin;
 
 @end
 

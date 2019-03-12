@@ -30,6 +30,25 @@
     
 }
 
+// 兼容横竖屏切换后布局错乱问题
+-(void)viewDidLayoutSubviews {
+    self.conversationListTableView.frame = self.view.bounds;
+    CGRect windowBounds = self.view.window.frame;
+    if (CGRectEqualToRect(windowBounds, CGRectZero)) {
+        return;
+    }
+    CGRect detailedFrame = CGRectZero;;
+    detailedFrame.origin = CGPointMake(0, 0);
+    detailedFrame.size.height = windowBounds.size.height;
+    detailedFrame.size.width = windowBounds.size.width - self.view.bounds.size.width;
+}
+
+// 测试设置头像
+- (void)willDisplayConversationTableCell:(RCConversationBaseCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    RCConversationCell *cells = (RCConversationCell *)cell;
+    ((UIImageView *)cells.headerImageView).layer.cornerRadius = ((UIImageView *)cells.headerImageView).frame.size.width / 2;
+}
+
 - (void)onSelectedTableRow:(RCConversationModelType)conversationModelType conversationModel:(RCConversationModel *)model atIndexPath:(NSIndexPath *)indexPath {
     
     SHConversationViewController *chatVC = [[SHConversationViewController alloc] init];
