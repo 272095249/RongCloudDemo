@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,8 +34,6 @@
 		3BA688E621BE60F900854030 /* RongSticker.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BA688E121BE60F800854030 /* RongSticker.strings */; };
 		3BA688E721BE60F900854030 /* RongSticker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BA688E421BE60F800854030 /* RongSticker.bundle */; };
 		3BA688E821BE60F900854030 /* RongSticker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA688E521BE60F800854030 /* RongSticker.framework */; };
-		3BA6898D21C0C0F200854030 /* BQMMRongCloudExt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA6898B21C0BFEE00854030 /* BQMMRongCloudExt.framework */; };
-		3BA6898E21C0C10F00854030 /* BQMM.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BA6898921C0BFC700854030 /* BQMM.bundle */; };
 		3BA689A221C38D7700854030 /* RongSight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA689A121C38D7700854030 /* RongSight.framework */; };
 		AC35CE09A7AD61F9F4209E6E /* libPods-RongCloudDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05243C18222CE78D25349671 /* libPods-RongCloudDemo.a */; };
 		AD663A830ED6269E87F1758C /* libPods-RongCloudDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA38EE95A59BCA953C10F655 /* libPods-RongCloudDemoTests.a */; };
@@ -110,8 +108,6 @@
 		3BA688E421BE60F800854030 /* RongSticker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RongSticker.bundle; sourceTree = "<group>"; };
 		3BA688E521BE60F800854030 /* RongSticker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RongSticker.framework; sourceTree = "<group>"; };
 		3BA6898721C0BFAB00854030 /* BQMMRongCloudExt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BQMMRongCloudExt.framework; path = ../../../../Desktop/bqmm/BQMMRongCloudExt.framework; sourceTree = "<group>"; };
-		3BA6898921C0BFC700854030 /* BQMM.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BQMM.bundle; sourceTree = "<group>"; };
-		3BA6898B21C0BFEE00854030 /* BQMMRongCloudExt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BQMMRongCloudExt.framework; sourceTree = "<group>"; };
 		3BA689A121C38D7700854030 /* RongSight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RongSight.framework; sourceTree = "<group>"; };
 		61D2181E95025DCEC2BB756E /* Pods-RongCloudDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoUITests/Pods-RongCloudDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		77E5BD714C218332FD71E759 /* Pods-RongCloudDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemoUITests/Pods-RongCloudDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,7 +124,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BA6898D21C0C0F200854030 /* BQMMRongCloudExt.framework in Frameworks */,
 				3BA688DF21BA5C4300854030 /* libSDWebImage.a in Frameworks */,
 				3BA688E821BE60F900854030 /* RongSticker.framework in Frameworks */,
 				AC35CE09A7AD61F9F4209E6E /* libPods-RongCloudDemo.a in Frameworks */,
@@ -170,8 +165,6 @@
 		3BA6885421BA5A1700854030 = {
 			isa = PBXGroup;
 			children = (
-				3BA6898B21C0BFEE00854030 /* BQMMRongCloudExt.framework */,
-				3BA6898921C0BFC700854030 /* BQMM.bundle */,
 				3BA6885F21BA5A1700854030 /* RongCloudDemo */,
 				3BA6887821BA5A1800854030 /* RongCloudDemoTests */,
 				3BA6888321BA5A1800854030 /* RongCloudDemoUITests */,
@@ -384,7 +377,8 @@
 				3BA6885921BA5A1700854030 /* Sources */,
 				3BA6885A21BA5A1700854030 /* Frameworks */,
 				3BA6885B21BA5A1700854030 /* Resources */,
-				47F1A0A6EC2B4ABB2B6D6731 /* [CP] Copy Pods Resources */,
+				5DC189DBBBC6913151FA66B3 /* [CP] Copy Pods Resources */,
+				54135FD084DAF74F28B09FAC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -481,7 +475,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BA6898E21C0C10F00854030 /* BQMM.bundle in Resources */,
 				3BA688E621BE60F900854030 /* RongSticker.strings in Resources */,
 				3BA688D021BA5BDC00854030 /* avatar_users_72px_1108447_easyicon.net.png in Resources */,
 				3BA688D621BA5BDC00854030 /* Swift.png in Resources */,
@@ -554,36 +547,38 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		47F1A0A6EC2B4ABB2B6D6731 /* [CP] Copy Pods Resources */ = {
+		54135FD084DAF74F28B09FAC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo-resources.sh",
-				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
-				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
-				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
-				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
-				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCColor.plist",
-				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
-			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RongCloud.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Emoji.plist",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCColor.plist",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCConfig.plist",
+				"${PODS_ROOT}/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DC189DBBBC6913151FA66B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E905908C42F4468142522F4C /* [CP] Check Pods Manifest.lock */ = {
@@ -812,11 +807,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3T8XA4F59Q;
+				DEVELOPMENT_TEAM = 9CVMN4UZK4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMLib",
-					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMKit",
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/RongSticker",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/Sight",
@@ -827,11 +820,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMLib",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.rongcloud.RongCloudDemo;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.rongcloud.im;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -845,11 +835,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3T8XA4F59Q;
+				DEVELOPMENT_TEAM = 9CVMN4UZK4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMLib",
-					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMKit",
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/RongSticker",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/RongCloudDemo/Libraries/Sight",
@@ -860,11 +848,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/RongCloudDemo/Libraries/IMLib",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.rongcloud.RongCloudDemo;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.rongcloud.im;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -7,7 +7,7 @@
 //
 
 #import "UserService.h"
-#import <RongIMKit/RongIMKit.h>
+#import <RongCloudOpenSource/RongIMKit.h>
 
 @implementation UserService
 

@@ -1,25 +1,43 @@
 PODS:
-  - RongCloudIM/IMKit (2.9.8):
-    - RongCloudIM/IMLib
-  - RongCloudIM/IMLib (2.9.8)
-  - SDWebImage (4.4.3):
-    - SDWebImage/Core (= 4.4.3)
-  - SDWebImage/Core (4.4.3)
+  - RongCloudIM/ChatRoom (5.1.2):
+    - RongCloudIM/IMLibCore
+  - RongCloudIM/CustomerService (5.1.2):
+    - RongCloudIM/IMLibCore
+  - RongCloudIM/Discussion (5.1.2):
+    - RongCloudIM/IMLibCore
+  - RongCloudIM/IMLib (5.1.2):
+    - RongCloudIM/ChatRoom
+    - RongCloudIM/CustomerService
+    - RongCloudIM/Discussion
+    - RongCloudIM/IMLibCore
+    - RongCloudIM/Location
+    - RongCloudIM/PublicService
+  - RongCloudIM/IMLibCore (5.1.2)
+  - RongCloudIM/Location (5.1.2):
+    - RongCloudIM/IMLibCore
+  - RongCloudIM/PublicService (5.1.2):
+    - RongCloudIM/IMLibCore
+  - RongCloudOpenSource/IMKit (5.1.2):
+    - RongCloudIM/IMLib (= 5.1.2)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
 
 DEPENDENCIES:
-  - RongCloudIM/IMKit (~> 2.9.8)
-  - RongCloudIM/IMLib (~> 2.9.8)
+  - RongCloudOpenSource/IMKit (~> 5.1.2)
   - SDWebImage (~> 4.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - RongCloudIM
+    - RongCloudOpenSource
     - SDWebImage
 
 SPEC CHECKSUMS:
-  RongCloudIM: dcfa8c4fe11e992c0d187f7dda71f2ce5bfae4d1
-  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
+  RongCloudIM: 792950d7c2edeec603cbe3d7a4b2a64d929f7caa
+  RongCloudOpenSource: 85d286fb84145d2aadff5ded7b6645db8a25c956
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
 
-PODFILE CHECKSUM: de9aea37f6a2149a297599079aad4e946d261f33
+PODFILE CHECKSUM: 8dbf52e0e9ba005dc263083973aee18bb39bfd5a
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.10.0

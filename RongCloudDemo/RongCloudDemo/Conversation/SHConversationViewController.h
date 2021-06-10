@@ -6,7 +6,7 @@
 //  Copyright © 2018 孙浩. All rights reserved.
 //
 
-#import <RongIMKit/RongIMKit.h>
+#import <RongCloudOpenSource/RongIMKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

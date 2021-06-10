@@ -33,8 +33,10 @@
             view.backgroundColor = [UIColor grayColor];
             break;
         default:
+            view.backgroundColor = [UIColor clearColor];
             break;
     }
+    NSLog(@"------------------ index:%d",index);
     
     return view;
     

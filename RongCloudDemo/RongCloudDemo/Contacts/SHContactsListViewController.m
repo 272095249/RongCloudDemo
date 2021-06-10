@@ -9,7 +9,7 @@
 #import "SHContactsListViewController.h"
 #import "SHConversationViewController.h"
 #import "UserService.h"
-#import <RongIMKit/RongIMKit.h>
+#import <RongCloudOpenSource/RongIMKit.h>
 #import <UIImageView+WebCache.h>
 #import "ContactCell.h"
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CA3BB65AC76CC1247D88C00BC669F3EE"
+               BlueprintIdentifier = "0136534A84A45D2284847347C228020C"
+               BuildableName = "libPods-RongCloudDemo.a"
                BlueprintName = "Pods-RongCloudDemo"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-RongCloudDemo.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

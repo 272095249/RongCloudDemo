@@ -6,10 +6,13 @@ target 'RongCloudDemo' do
   # use_frameworks!
 
 
-platform :ios, '7.0'
+platform :ios, '9.0'
 pod 'SDWebImage', '~> 4.0'
-pod 'RongCloudIM/IMLib', '~> 2.9.8'
-pod 'RongCloudIM/IMKit', '~> 2.9.8'  
+#pod 'RongCloudIM/IMLib', '~> 5.1.2.1'
+#pod 'RongCloudIM/IMKit', '5.1.2.1'
+#pod 'RongCloudIM/IMKit', '~> 5.1.2.1'
+
+pod 'RongCloudOpenSource/IMKit','~>5.1.2'           # IMKit
 
   # Pods for RongCloudDemo
 

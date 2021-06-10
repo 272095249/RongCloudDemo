@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <RongIMKit/RongIMKit.h>
+#import <RongCloudOpenSource/RongIMKit.h>
 
 @class RootTabBarController;
 @interface AppDelegate : UIResponder <UIApplicationDelegate, RCIMReceiveMessageDelegate>

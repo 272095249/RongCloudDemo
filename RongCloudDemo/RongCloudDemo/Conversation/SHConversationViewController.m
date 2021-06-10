@@ -24,9 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self setupEmotionTab];
+    [self setupEmotionTab];
     
-    [self.chatSessionInputBarControl.pluginBoardView insertItemWithImage:[UIImage imageNamed:@"urlPic"] title:@"链接" tag:2001];
+//    [self.chatSessionInputBarControl.pluginBoardView insertItemWithImage:[UIImage imageNamed:@"urlPic"] title:@"链接" tag:2001];
     /*!
      注册自定义消息的Cell
      
@@ -75,48 +75,48 @@
 }
 
 // 兼容横竖屏切换后布局错乱问题
--(void)viewDidLayoutSubviews {
-    
-    CGRect frame = self.view.bounds;
-    float height = 44;
-    if (@available(iOS 11.0, *)) {
-        height += [[[UIApplication sharedApplication] keyWindow] safeAreaInsets].top;
-    } else {
-        height += 20;
-    }
-    frame.origin.y = height;
-    frame.size.height = frame.size.height - RC_ChatSessionInputBar_Height - height;
-    self.conversationMessageCollectionView.frame = frame;
-    for (RCMessageModel * model in self.conversationDataRepository) {
-        model.cellSize = CGSizeZero;
-    }
-    [self.conversationMessageCollectionView reloadData];
-    
-    UIView * collectionViewHeader = [self valueForKey:@"collectionViewHeader"]; // 私有方法
-    collectionViewHeader.frame = CGRectMake(0, -40, self.view.bounds.size.width, 40);
-    
-    CGRect controlFrame = self.chatSessionInputBarControl.frame;
-    controlFrame.size.width=self.view.frame.size.width;
-    controlFrame.origin.y=self.conversationMessageCollectionView.frame.size.height-self.chatSessionInputBarControl.frame.size.height;
-    self.chatSessionInputBarControl.frame=controlFrame;
-    
-    CGRect inputContainerViewFrame = self.chatSessionInputBarControl.inputContainerView.frame;
-    inputContainerViewFrame.size.width = self.view.frame.size.width;
-    
-    CGRect inputTextViewFrame = self.chatSessionInputBarControl.inputTextView.frame;
-    inputTextViewFrame.size.width = self.chatSessionInputBarControl.frame.size.width-132;
-    if (self.chatSessionInputBarControl.menuContainerView) {
-        inputContainerViewFrame.size.width = inputContainerViewFrame.size.width - 42;// SwitchButtonWidth
-        inputTextViewFrame.size.width = inputTextViewFrame.size.width - 41;
-        
-        // 如果包含公众号菜单需要正常调整视图大小
-        self.chatSessionInputBarControl.menuContainerView.frame = inputContainerViewFrame;
-        self.chatSessionInputBarControl.publicServiceMenu = self.chatSessionInputBarControl.publicServiceMenu;
-    }
-    self.chatSessionInputBarControl.inputContainerView.frame = inputContainerViewFrame;
-    self.chatSessionInputBarControl.inputTextView.frame = inputTextViewFrame;
-    [self.chatSessionInputBarControl containerViewSizeChangedNoAnnimation];
-}
+//-(void)viewDidLayoutSubviews {
+//
+//    CGRect frame = self.view.bounds;
+//    float height = 44;
+//    if (@available(iOS 11.0, *)) {
+//        height += [[[UIApplication sharedApplication] keyWindow] safeAreaInsets].top;
+//    } else {
+//        height += 20;
+//    }
+//    frame.origin.y = height;
+//    frame.size.height = frame.size.height - RC_ChatSessionInputBar_Height - height;
+//    self.conversationMessageCollectionView.frame = frame;
+//    for (RCMessageModel * model in self.conversationDataRepository) {
+//        model.cellSize = CGSizeZero;
+//    }
+//    [self.conversationMessageCollectionView reloadData];
+//
+//    UIView * collectionViewHeader = [self valueForKey:@"collectionViewHeader"]; // 私有方法
+//    collectionViewHeader.frame = CGRectMake(0, -40, self.view.bounds.size.width, 40);
+//
+//    CGRect controlFrame = self.chatSessionInputBarControl.frame;
+//    controlFrame.size.width=self.view.frame.size.width;
+//    controlFrame.origin.y=self.conversationMessageCollectionView.frame.size.height-self.chatSessionInputBarControl.frame.size.height;
+//    self.chatSessionInputBarControl.frame=controlFrame;
+//
+//    CGRect inputContainerViewFrame = self.chatSessionInputBarControl.inputContainerView.frame;
+//    inputContainerViewFrame.size.width = self.view.frame.size.width;
+//
+//    CGRect inputTextViewFrame = self.chatSessionInputBarControl.inputTextView.frame;
+//    inputTextViewFrame.size.width = self.chatSessionInputBarControl.frame.size.width-132;
+//    if (self.chatSessionInputBarControl.menuContainerView) {
+//        inputContainerViewFrame.size.width = inputContainerViewFrame.size.width - 42;// SwitchButtonWidth
+//        inputTextViewFrame.size.width = inputTextViewFrame.size.width - 41;
+//
+//        // 如果包含公众号菜单需要正常调整视图大小
+//        self.chatSessionInputBarControl.menuContainerView.frame = inputContainerViewFrame;
+//        self.chatSessionInputBarControl.publicServiceMenu = self.chatSessionInputBarControl.publicServiceMenu;
+//    }
+//    self.chatSessionInputBarControl.inputContainerView.frame = inputContainerViewFrame;
+//    self.chatSessionInputBarControl.inputTextView.frame = inputTextViewFrame;
+//    [self.chatSessionInputBarControl containerViewSizeChangedNoAnnimation];
+//}
 
 // 为了修改已读样式添加
 - (void)willDisplayMessageCell:(RCMessageBaseCell *)cell atIndexPath:(NSIndexPath *)indexPath {
@@ -151,52 +151,52 @@
     }
     
     // 测试图片上传至自己的服务器
-    if ([messageContent isKindOfClass:[RCImageMessage class]]) {
-        
-        [self sendMediaMessage:messageContent pushContent:@"picture test" appUpload:YES];
-        
-        return nil;
-    }
+//    if ([messageContent isKindOfClass:[RCImageMessage class]]) {
+//        
+//        [self sendMediaMessage:messageContent pushContent:@"picture test" appUpload:YES];
+//        
+//        return nil;
+//    }
     
     return messageContent;
 }
 
 // 测试图片上传至自己的服务器
-- (void)uploadMedia:(RCMessage *)message uploadListener:(RCUploadMediaStatusListener *)uploadListener {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        
-        BOOL isSuccess = NO;
-        
-        int i = 0;
-        
-        for (i = 0; i < 10; i++) {
-            
-            uploadListener.updateBlock(i);
-            
-            [NSThread sleepForTimeInterval:0.2];
-            
-            isSuccess = YES;
-            
-        }
-        
-        if(isSuccess){//如果上传成功
-            
-            NSLog(@"上传成功");
-            
-            RCImageMessage *targetMessage = (RCImageMessage *)message.content;
-            
-            targetMessage.imageUrl = @"http://www.rongcloud.cn/images/newVersion/bannerInner.png?0717";
-            
-            uploadListener.successBlock(targetMessage);
-            
-        }else {//如果上传失败
-            
-            uploadListener.errorBlock(-1);
-            
-        }
-        
-    });
-}
+//- (void)uploadMedia:(RCMessage *)message uploadListener:(RCUploadMediaStatusListener *)uploadListener {
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        
+//        BOOL isSuccess = NO;
+//        
+//        int i = 0;
+//        
+//        for (i = 0; i < 10; i++) {
+//            
+//            uploadListener.updateBlock(i);
+//            
+//            [NSThread sleepForTimeInterval:0.2];
+//            
+//            isSuccess = YES;
+//            
+//        }
+//        
+//        if(isSuccess){//如果上传成功
+//            
+//            NSLog(@"上传成功");
+//            
+//            RCImageMessage *targetMessage = (RCImageMessage *)message.content;
+//            
+//            targetMessage.imageUrl = @"http://www.rongcloud.cn/images/newVersion/bannerInner.png?0717";
+//            
+//            uploadListener.successBlock(targetMessage);
+//            
+//        }else {//如果上传失败
+//            
+//            uploadListener.errorBlock(-1);
+//            
+//        }
+//        
+//    });
+//}
 
 // 为了试验发送消息成功后添加动画
 - (void)didSendMessage:(NSInteger)status content:(RCMessageContent *)messageContent {
@@ -321,7 +321,7 @@
     SHExpressionTab *expressionTab = [SHExpressionTab new];
     expressionTab.identify = @"1";
     expressionTab.image = icon;
-    expressionTab.pageCount = 2;
+    expressionTab.pageCount = 5;
     [self.chatSessionInputBarControl.emojiBoardView addEmojiTab:expressionTab];
 }
 

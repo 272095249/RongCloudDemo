@@ -5,6 +5,10 @@ This application makes use of the following third party libraries:
 
 Copyright 2014 Rong Cloud
 
+## RongCloudOpenSource
+
+Copyright 2021 RongCloud
+
 ## SDWebImage
 
 Copyright (c) 2009-2017 Olivier Poitrey rs@dailymotion.com
